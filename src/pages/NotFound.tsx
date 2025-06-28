@@ -1,7 +1,6 @@
+import { Link } from "react-router-dom";
 
 export default function NotFoundPage() {
-
-
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">
       <section className="relative flex flex-grow items-center justify-center bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 sm:px-8 sm:py-24">
@@ -16,12 +15,12 @@ export default function NotFoundPage() {
             Oops! The page you are looking for might have been removed, had its
             name changed, or is temporarily unavailable.
           </p>
-          <a
-            href="/"
+          <Link
+            to="/"
             className="inline-flex transform items-center rounded-lg bg-blue-600 px-8 py-4 text-xl font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-10 sm:py-5"
           >
             <i className="fas fa-home mr-3"></i> Back to Home
-          </a>
+          </Link>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 export default function IndustriesPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
@@ -155,12 +156,12 @@ export default function IndustriesPage() {
       </section>
 
       <div className="bg-gray-50 py-12 text-center">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
         >
           <i className="fas fa-arrow-left mr-2 sm:mr-3"></i> Back to Home
-        </a>
+        </Link>
       </div>
 
       <link

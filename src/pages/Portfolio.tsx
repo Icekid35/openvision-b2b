@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 export default function PortfolioPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
@@ -151,9 +152,9 @@ export default function PortfolioPage() {
           />
           <div className="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-3">
             {portfolioProjects.map((project, i) => (
-              <a
+              <Link
                 key={i}
-                href={project.link}
+                to={project.link}
                 className="hover:scale-102 block rounded-xl bg-white shadow-xl transition-all duration-300 hover:shadow-2xl"
               >
                 <div className="flex w-full justify-center overflow-hidden rounded-t-xl">
@@ -186,7 +187,7 @@ export default function PortfolioPage() {
                     <i className="fas fa-arrow-right ml-1 text-xs sm:text-sm"></i>
                   </p>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="mt-12 text-center sm:mt-16">
@@ -208,22 +209,22 @@ export default function PortfolioPage() {
           <p className="mb-10 text-lg opacity-90 sm:text-xl md:text-2xl">
             Let's discuss how Open Vision can create your next success story.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex transform items-center rounded-xl bg-green-500 px-8 py-4 text-xl font-bold text-white shadow-xl transition duration-300 hover:scale-105 hover:bg-green-600"
           >
             Start a Project <i className="fas fa-pencil-alt ml-3"></i>
-          </a>
+          </Link>
         </div>
       </section>
 
       <div className="bg-gray-50 py-12 text-center">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
         >
           <i className="fas fa-arrow-left mr-2 sm:mr-3"></i> Back to Home
-        </a>
+        </Link>
       </div>
 
       <link

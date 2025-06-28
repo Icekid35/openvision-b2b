@@ -1,4 +1,5 @@
-import { useEffect, ReactNode,useState } from "react";
+import { useEffect, ReactNode, useState } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -135,18 +136,18 @@ export default function Home() {
               and immersive digital experiences.
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row sm:gap-6 md:justify-start">
-              <a
-                href="/services"
+              <Link
+                to="/services"
                 className="flex transform items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-blue-700 sm:gap-3 sm:px-8 sm:py-4 sm:text-xl"
               >
                 Explore Services <i className="fas fa-palette"></i>
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="border-600 flex transform items-center justify-center gap-2 rounded-xl border-2 bg-white px-6 py-3 text-lg font-bold text-blue-600 shadow-lg transition duration-300 hover:scale-105 hover:bg-blue-50 sm:gap-3 sm:px-8 sm:py-4 sm:text-xl"
               >
                 Get a Quote <i className="fas fa-tags"></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div        
@@ -338,13 +339,13 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center sm:mt-16">
-            <a
-              href="/services"
+            <Link
+              to="/services"
               className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
             >
               View All Services{" "}
               <i className="fas fa-arrow-right ml-2 sm:ml-3"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -439,13 +440,13 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center sm:mt-16">
-            <a
-              href="/industries"
+            <Link
+              to="/industries"
               className="inline-flex transform items-center rounded-lg bg-green-500 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-green-600 sm:px-8 sm:py-4"
             >
               Explore All Industries{" "}
               <i className="fas fa-briefcase ml-2 sm:ml-3"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -590,13 +591,13 @@ export default function Home() {
                 <li>High-definition 3D product rendering & animation.</li>
                 <li>Integrated content strategy for visual storytelling.</li>
               </ul>
-              <a
-                href="/case-studies/moderne-furnishings"
+              <Link
+                to="/case-studies/moderne-furnishings"
                 className="inline-flex transform items-center rounded-lg bg-green-500 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-green-600 sm:px-8 sm:py-4"
               >
                 View Full Case Study{" "}
                 <i className="fas fa-chevron-right ml-2 sm:ml-3"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -674,13 +675,13 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center sm:mt-16">
-            <a
-              href="/process-details"
+            <Link
+              to="/process-details"
               className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
             >
               Learn More About Our Process{" "}
               <i className="fas fa-cogs ml-2 sm:ml-3"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -773,13 +774,13 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center sm:mt-16">
-            <a
-              href="/technologies-details"
+            <Link
+              to="/technologies-details"
               className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
             >
               Explore Our Tech Stack{" "}
               <i className="fas fa-tools ml-2 sm:ml-3"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -878,13 +879,13 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-12 text-center sm:mt-16">
-            <a
-              href="/about-us"
+            <Link
+              to="/about-us"
               className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
             >
               Discover Our Story{" "}
               <i className="fas fa-info-circle ml-2 sm:ml-3"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -964,13 +965,13 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center sm:mt-16">
-            <a
-              href="/testimonials-page"
+            <Link
+              to="/testimonials-page"
               className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
             >
               Read More Testimonials{" "}
               <i className="fas fa-comment-alt ml-2 sm:ml-3"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -1016,9 +1017,9 @@ export default function Home() {
                 src: "/images/videob2b.jpg",
               },
             ].map((post, i) => (
-              <a
+              <Link
                 key={i}
-                href={post.link}
+                to={post.link}
                 className="hover:scale-102 block rounded-xl bg-white shadow-xl transition-all duration-300 hover:shadow-2xl"
                 data-aos="fade-up"
                 data-aos-delay={ isMobile ? 0 : 100 + i * 120}
@@ -1048,17 +1049,17 @@ export default function Home() {
                     <i className="fas fa-arrow-right ml-1 text-xs sm:text-sm"></i>
                   </p>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="mt-12 text-center sm:mt-16">
-            <a
-              href="/blog"
+            <Link
+              to="/blog"
               className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
             >
               View All Insights{" "}
               <i className="fas fa-book-open ml-2 sm:ml-3"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -1081,12 +1082,12 @@ export default function Home() {
             Let's discuss how Open Vision can craft stunning visuals and digital
             experiences for your enterprise.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex transform items-center justify-center gap-3 rounded-xl bg-green-500 px-8 py-4 text-xl font-bold text-white shadow-xl transition duration-300 hover:scale-105 hover:bg-green-600 sm:gap-4 sm:px-10 sm:py-5 sm:text-2xl"
           >
             Schedule a Consultation <i className="fas fa-calendar-alt"></i>
-          </a>
+          </Link>
         </div>
       </section>
 

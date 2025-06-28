@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function ServicesPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
@@ -37,8 +38,6 @@ export default function ServicesPage() {
       />
     );
   };
-
-
 
   const services = [
     {
@@ -157,21 +156,24 @@ export default function ServicesPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">
-           <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-48">
+      <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-48">
         <div className="mx-auto max-w-6xl text-center">
           <h1 className="mb-4 text-4xl font-extrabold leading-tight text-gray-900 sm:mb-6 sm:text-5xl md:text-6xl">
-            Our Comprehensive Range of <span className="text-blue-600"> Visual & Digital Services</span>
+            Our Comprehensive Range of{" "}
+            <span className="text-blue-600"> Visual & Digital Services</span>
           </h1>
           <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600 sm:mb-10 sm:text-xl md:text-2xl">
-           Explore our extensive suite of services designed to elevate your brand's presence and drive measurable results across all digital touchpoints.</p>
+            Explore our extensive suite of services designed to elevate your
+            brand's presence and drive measurable results across all digital
+            touchpoints.
+          </p>
         </div>
       </section>
-       <section
+      <section
         id="services-list"
         className="relative bg-gray-50 px-4 py-16 pt-24 sm:px-8 sm:py-24"
       >
         <div className="mx-auto max-w-6xl">
-
           <div className="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => (
               <div
@@ -211,12 +213,12 @@ export default function ServicesPage() {
       </section>
 
       <div className="bg-gray-50 py-12 text-center">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
         >
           <i className="fas fa-arrow-left mr-2 sm:mr-3"></i> Back to Home
-        </a>
+        </Link>
       </div>
 
       <link

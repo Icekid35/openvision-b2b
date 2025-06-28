@@ -1,4 +1,5 @@
 import { ReactNode, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function SignupPage() {
   const COLOR_DARK_TEXT = "#1F2937";
@@ -186,24 +187,24 @@ export default function SignupPage() {
             </div>
             <p className="text-md mt-4 text-center text-gray-600">
               Already have an account?{" "}
-              <a
-                href="/signin"
+              <Link
+                to="/signin"
                 className="font-semibold text-blue-600 hover:underline"
               >
                 Log In
-              </a>
+              </Link>
             </p>
           </form>
         </div>
       </section>
 
       <div className="bg-gray-50 py-12 text-center">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
         >
           <i className="fas fa-arrow-left mr-2 sm:mr-3"></i> Back to Home
-        </a>
+        </Link>
       </div>
 
       <link
