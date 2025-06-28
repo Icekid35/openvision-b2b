@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 
 export default function ProcessDetailsPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-  const COLOR_ACCENT_GREEN = "#10B981";
   const COLOR_DARK_TEXT = "#1F2937";
   const COLOR_NEUTRAL_TEXT = "#6B7280";
 

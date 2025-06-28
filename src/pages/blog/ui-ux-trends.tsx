@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 
 export default function UIUXTrendsBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-  const COLOR_ACCENT_GREEN = "#10B981";
   const COLOR_DARK_TEXT = "#1F2937";
   const COLOR_NEUTRAL_TEXT = "#6B7280";
 
@@ -41,34 +40,6 @@ export default function UIUXTrendsBlogPage() {
     );
   };
 
-  interface SectionHeaderProps {
-    title: ReactNode;
-    subtitle: ReactNode;
-    textColor?: string;
-    subtextColor?: string;
-  }
-  const SectionHeader = ({
-    title,
-    subtitle,
-    textColor = COLOR_DARK_TEXT,
-    subtextColor = COLOR_NEUTRAL_TEXT,
-  }: SectionHeaderProps) => (
-    <div className="mb-16 px-4 text-center">
-      <h2
-        className="mb-4 text-4xl font-extrabold sm:text-5xl"
-        style={{ color: textColor }}
-      >
-        {title}
-      </h2>
-      <p
-        className="mx-auto max-w-3xl text-lg sm:text-xl"
-        style={{ color: subtextColor }}
-      >
-        {subtitle}
-      </p>
-    </div>
-  );
-
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">
       <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 sm:px-8 sm:py-24">
@@ -84,7 +55,7 @@ export default function UIUXTrendsBlogPage() {
             w={900}
             h={500}
             label="UI/UX Trends"
-            bgColor={COLOR_ACCENT_GREEN.replace("#", "")}
+            bgColor={COLOR_PRIMARY_BLUE.replace("#", "")}
             textColor="FFFFFF"
             src="/images/uitrend.jpg"
             className="mx-auto h-auto w-full max-w-4xl"

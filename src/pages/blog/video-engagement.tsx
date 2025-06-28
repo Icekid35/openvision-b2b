@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 
 export default function VideoEngagementBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-  const COLOR_ACCENT_GREEN = "#10B981";
   const COLOR_DARK_TEXT = "#1F2937";
   const COLOR_NEUTRAL_TEXT = "#6B7280";
 
@@ -40,34 +39,6 @@ export default function VideoEngagementBlogPage() {
       />
     );
   };
-
-  interface SectionHeaderProps {
-    title: ReactNode;
-    subtitle: ReactNode;
-    textColor?: string;
-    subtextColor?: string;
-  }
-  const SectionHeader = ({
-    title,
-    subtitle,
-    textColor = COLOR_DARK_TEXT,
-    subtextColor = COLOR_NEUTRAL_TEXT,
-  }: SectionHeaderProps) => (
-    <div className="mb-16 px-4 text-center">
-      <h2
-        className="mb-4 text-4xl font-extrabold sm:text-5xl"
-        style={{ color: textColor }}
-      >
-        {title}
-      </h2>
-      <p
-        className="mx-auto max-w-3xl text-lg sm:text-xl"
-        style={{ color: subtextColor }}
-      >
-        {subtitle}
-      </p>
-    </div>
-  );
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">
