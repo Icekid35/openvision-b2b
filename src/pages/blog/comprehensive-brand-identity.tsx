@@ -1,6 +1,31 @@
 export default function ComprehensiveBrandIdentityBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-  const COLOR_ACCENT_GREEN = "#10B981";
+  interface ImgPlaceholderProps {
+    w: number;
+    h: number;
+    label?: string;
+    src?: string;
+    className?: string;
+    alt?: string;
+  }
+  const ImgPlaceholder = ({
+    w,
+    h,
+    label,
+    className = "",
+    alt = label,
+  }: ImgPlaceholderProps) => {
+    return (
+      <img
+        src={"/images/digitalroi.jpg"}
+        alt={alt}
+        width={w}
+        height={h}
+        className={`hover:scale-102 transform rounded-xl shadow-lg transition-transform duration-500 ease-out ${className}`}
+        style={{ objectFit: "cover" }}
+      />
+    );
+  };
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">
@@ -17,8 +42,6 @@ export default function ComprehensiveBrandIdentityBlogPage() {
             w={900}
             h={500}
             label="Comprehensive Branding"
-            bgColor={COLOR_ACCENT_GREEN.replace("#", "")}
-            textColor="FFFFFF"
             src="https://placehold.co/900x500/10B981/FFFFFF?text=Comprehensive+Branding"
             className="mx-auto h-auto w-full max-w-4xl"
           />
@@ -100,8 +123,6 @@ export default function ComprehensiveBrandIdentityBlogPage() {
             w={600}
             h={350}
             label="Brand Identity Elements"
-            bgColor={COLOR_PRIMARY_BLUE.replace("#", "")}
-            textColor="FFFFFF"
             src="https://placehold.co/600x350/3B82F6/FFFFFF?text=Brand+Identity+Elements"
             className="mx-auto my-8 h-auto w-full max-w-2xl"
           />

@@ -1,6 +1,5 @@
 export default function DataDrivenMarketingBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-  const COLOR_ACCENT_GREEN = "#10B981";
 
   interface ImgPlaceholderProps {
     w: number;
@@ -14,7 +13,6 @@ export default function DataDrivenMarketingBlogPage() {
     w,
     h,
     label,
-    src,
     className = "",
     alt = label,
   }: ImgPlaceholderProps) => {

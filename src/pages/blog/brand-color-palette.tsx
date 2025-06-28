@@ -1,6 +1,5 @@
 export default function BrandColorPaletteBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-  const COLOR_ACCENT_GREEN = "#10B981";
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">

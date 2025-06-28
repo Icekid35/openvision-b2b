@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 
 export default function VideoEngagementBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";

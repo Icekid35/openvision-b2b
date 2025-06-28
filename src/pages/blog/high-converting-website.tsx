@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 
 export default function HighConvertingWebsiteBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
@@ -15,7 +14,6 @@ export default function HighConvertingWebsiteBlogPage() {
     w,
     h,
     label,
-    src,
     className = "",
     alt = label,
   }: ImgPlaceholderProps) => {
