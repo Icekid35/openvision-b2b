@@ -61,6 +61,8 @@ export default function App() {
 
   return (
     <Router>
+      <div className="max-w-[1800px] overflow-hidden relative m-auto">
+
       <ScrollToTop />
       <Header />
       {!isMobile && (
@@ -177,6 +179,7 @@ export default function App() {
         <Route path="*" Component={NotFound} />
       </Routes>
       <Footer />
+      </div>
     </Router>
   );
 }

@@ -39,13 +39,13 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-colors duration-300 sm:px-8 ${
+      className={`fixed max-w-[1800px] top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-colors duration-300 md:px-8 ${
         hasScrolled || isMenuOpen ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <Link
         to="/"
-        className="text-2xl font-extrabold tracking-wide sm:text-3xl"
+        className="text-2xl font-extrabold tracking-wide md:text-3xl"
         style={{
           color: COLOR_PRIMARY_BLUE,
           textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
@@ -61,7 +61,7 @@ const Header: React.FC = () => {
         </span>{" "}
         Vision
       </Link>
-      <div className="flex items-center sm:hidden">
+      <div className="flex items-center md:hidden">
         <button
           className="text-2xl text-gray-700 focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -70,13 +70,13 @@ const Header: React.FC = () => {
         </button>
       </div>
       <div
-        className={`items-center space-x-4 sm:flex md:space-x-8 ${
+        className={`items-center space-x-4 md:flex md:space-x-8 ${
           isMenuOpen
             ? "absolute left-0 top-[63px] flex w-full flex-col items-center space-x-0 space-y-4 bg-white py-4 shadow-md"
             : "hidden"
-        } sm:relative sm:left-auto sm:top-auto sm:w-auto sm:flex-row sm:bg-transparent sm:py-0 sm:shadow-none`}
+        } md:relative md:left-auto md:top-auto md:w-auto md:flex-row md:bg-transparent md:py-0 md:shadow-none`}
       >
-        <nav className="flex flex-col space-y-2 text-sm sm:flex-row sm:space-x-4 sm:space-y-0 sm:text-lg md:space-x-8">
+        <nav className="flex flex-col space-y-2 text-sm md:flex-row md:space-y-0 md:text-lg md:space-x-8">
           {navLinks.map((link) => (
             <Link
               to={isHome ? link.hash : link.path}
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
         </nav>
         <Link
           to={isHome ? "/get-started" : "/get-started"}
-          className="transform rounded-lg bg-[#3B82F6] px-5 py-2 text-sm font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:ring-4 sm:px-6 sm:py-3 sm:text-lg"
+          className="transform text-nowrap rounded-lg bg-[#3B82F6] px-5 py-2 text-sm font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:ring-4 md:px-6 md:py-3 md:text-lg"
           onClick={() => setIsMenuOpen(false)}
         >
           Get Started
