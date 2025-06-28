@@ -185,17 +185,21 @@ export default function ServicesPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">
-      <section
+           <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-48">
+        <div className="mx-auto max-w-6xl text-center">
+          <h1 className="mb-4 text-4xl font-extrabold leading-tight text-gray-900 sm:mb-6 sm:text-5xl md:text-6xl">
+            Our Comprehensive Range of <span className="text-blue-600"> Visual & Digital Services</span>
+          </h1>
+          <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600 sm:mb-10 sm:text-xl md:text-2xl">
+           Explore our extensive suite of services designed to elevate your brand's presence and drive measurable results across all digital touchpoints.</p>
+        </div>
+      </section>
+       <section
         id="services-list"
         className="relative bg-gray-50 px-4 py-16 pt-24 sm:px-8 sm:py-24"
       >
         <div className="mx-auto max-w-6xl">
-          <SectionHeader
-            title="Our Comprehensive Range of Visual & Digital Services"
-            subtitle="Explore our extensive suite of services designed to elevate your brand's presence and drive measurable results across all digital touchpoints."
-            textColor={COLOR_DARK_TEXT}
-            subtextColor={COLOR_NEUTRAL_TEXT}
-          />
+
           <div className="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => (
               <div

@@ -119,7 +119,7 @@ export default function IndustriesPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">
-      <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24">
+      <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-48">
         <div className="mx-auto max-w-6xl text-center">
           <SectionHeader
             title="Empowering Diverse Industries with Visual Innovation"

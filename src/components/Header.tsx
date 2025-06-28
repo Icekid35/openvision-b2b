@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
 const COLOR_PRIMARY_BLUE = "#3B82F6";
 const COLOR_ACCENT_GREEN = "#10B981"; // A lively, fresh green for highlights
@@ -16,8 +16,8 @@ const navLinks = [
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-  const location = useLocation();
-  const isHome = location.pathname === "/";
+  // const location = useLocation();
+  const isHome =false // location.pathname === "/";
   useEffect(() => {
     const fontLink = document.createElement("link");
     fontLink.href =
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      setHasScrolled(offset > 0);
+      setHasScrolled(offset > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
       <div
         className={`items-center space-x-4 sm:flex md:space-x-8 ${
           isMenuOpen
-            ? "absolute left-0 top-[72px] flex w-full flex-col items-center space-x-0 space-y-4 bg-white py-4 shadow-md"
+            ? "absolute left-0 top-[63px] flex w-full flex-col items-center space-x-0 space-y-4 bg-white py-4 shadow-md"
             : "hidden"
         } sm:relative sm:left-auto sm:top-auto sm:w-auto sm:flex-row sm:bg-transparent sm:py-0 sm:shadow-none`}
       >

@@ -71,7 +71,7 @@ export default function AboutUsPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">
-      <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24">
+      <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-48">
         <div className="mx-auto max-w-6xl text-center">
           <h1 className="mb-4 text-4xl font-extrabold leading-tight text-gray-900 sm:mb-6 sm:text-5xl md:text-6xl">
             About <span className="text-blue-600">Open Vision</span>

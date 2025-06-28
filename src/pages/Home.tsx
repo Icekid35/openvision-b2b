@@ -1,33 +1,36 @@
-import { useEffect, useState, ReactNode } from "react";
+import { useEffect, ReactNode,useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
   const COLOR_ACCENT_GREEN = "#10B981";
   const COLOR_DARK_TEXT = "#1F2937";
   const COLOR_NEUTRAL_TEXT = "#6B7280";
-
-  const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
+   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      const elements = document.querySelectorAll("[data-animate-on-scroll]");
-      elements.forEach((el) => {
-        const id =
-          el.id || `section-${Math.random().toString(36).substr(2, 9)}`;
-        el.id = id;
-        const rect = el.getBoundingClientRect();
-        if (
-          rect.top < window.innerHeight - rect.height * 0.2 &&
-          rect.bottom > rect.height * 0.2
-        ) {
-          setIsVisible((prev) => ({ ...prev, [id]: true }));
-        }
-      });
-    };
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+    handleResize()
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "linear",
+      // once: true,
+      offset: 80,
+      mirror: true,
+    });
   }, []);
 
   interface ImgPlaceholderProps {
@@ -95,7 +98,11 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen max-w-[100vw] flex-col overflow-hidden bg-gray-50 font-sans text-gray-800 antialiased">
-      <section id="hero-section" className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24">
+      <section
+        id="hero-section"
+        className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-48"
+
+      >
         <div className="absolute inset-0 z-0 opacity-100">
           {" "}
           <div className="animate-blob animation-delay-0 absolute left-1/4 top-1/4 h-80 w-80 rounded-full bg-blue-300 opacity-80 mix-blend-multiply blur-3xl filter sm:h-96 sm:w-96"></div>
@@ -103,7 +110,7 @@ export default function Home() {
           <div className="animate-blob animation-delay-4000 absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-300 opacity-80 mix-blend-multiply blur-3xl filter sm:h-96 sm:w-96"></div>
         </div>
         <div className="absolute inset-0 z-[5] bg-gradient-to-br from-blue-100/10 to-green-50/10"></div>{" "}
-        <i className="fas fa-brush absolute left-10 top-10 rotate-45 transform text-6xl text-blue-400 opacity-20"></i>
+        {/* <i className="fas fa-brush absolute left-10 top-10 rotate-45 transform text-6xl text-blue-400 opacity-20"></i> */}
         <i className="fas fa-palette -rotate-30 absolute bottom-10 right-10 transform text-6xl text-green-400 opacity-20"></i>
         <i className="fas fa-magic absolute left-5 top-1/2 -translate-y-1/2 transform text-5xl text-purple-400 opacity-20"></i>
         <i className="fas fa-lightbulb absolute bottom-5 left-1/4 text-5xl text-yellow-400 opacity-20"></i>
@@ -111,8 +118,13 @@ export default function Home() {
         <div
           className="relative z-20 mx-auto flex max-w-6xl translate-y-0 flex-col items-center justify-between gap-8 opacity-100 transition-none md:flex-row md:gap-16"
           id="hero-content"
+          data-aos="fade-right"
+          
         >
-          <div className="text-center md:w-1/2 md:text-left">
+          <div         
+          data-aos="fade-up"
+        
+         className="text-center md:w-1/2 md:text-left">
             <h1 className="mb-4 text-4xl font-extrabold leading-tight text-gray-900 sm:mb-6 sm:text-5xl md:text-6xl">
               Your Vision, Our{" "}
               <span className="text-blue-600">Visual Mastery</span>
@@ -137,7 +149,10 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="mt-8 flex w-full justify-center md:mt-0 md:w-1/2">
+          <div        
+           data-aos="fade-left"
+        
+         className="mt-8 flex w-full justify-center md:mt-0 md:w-1/2">
             <ImgPlaceholder
               src={"/images/heromockup.png"}
               w={600}
@@ -153,7 +168,8 @@ export default function Home() {
 
       <section
         className="relative bg-white px-4 py-12 shadow-inner sm:px-8 sm:py-16"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
         id="trust-bar"
       >
         <i className="fas fa-shapes absolute -top-8 left-1/4 -rotate-12 transform text-4xl text-gray-300 opacity-50"></i>
@@ -162,9 +178,7 @@ export default function Home() {
         <i className="fas fa-rocket -rotate-15 absolute bottom-5 left-5 transform text-5xl text-green-200 opacity-30"></i>
         <i className="fas fa-star absolute left-10 top-1/2 -translate-y-1/2 rotate-90 transform text-4xl text-yellow-200 opacity-30"></i>
         <i className="fas fa-lightbulb absolute bottom-1/4 right-1/4 text-4xl text-purple-200 opacity-30"></i>
-        <div
-          className={`mx-auto max-w-6xl transform text-center transition-all duration-1000 ${isVisible["trust-bar"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
-        >
+        <div className="mx-auto max-w-6xl transform text-center transition-all duration-1000">
           {" "}
           <h3 className="mb-6 text-xl font-semibold text-gray-700 sm:mb-8 sm:text-2xl">
             Trusted by leading brands across industries
@@ -220,7 +234,8 @@ export default function Home() {
       <section
         id="solutions"
         className="relative bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
       >
         <i className="fas fa-code absolute -top-10 right-1/4 rotate-12 transform text-5xl text-blue-300 opacity-50"></i>
         <i className="fas fa-mobile-alt left-1/5 absolute bottom-0 -rotate-12 transform text-5xl text-green-300 opacity-50"></i>
@@ -228,9 +243,7 @@ export default function Home() {
         <i className="fas fa-paint-brush rotate-60 absolute bottom-10 right-5 transform text-6xl text-pink-300 opacity-30"></i>
         <i className="fas fa-cube absolute right-10 top-1/2 translate-y-1/2 transform text-5xl text-teal-300 opacity-30"></i>
         <i className="fas fa-film absolute bottom-5 left-1/3 text-5xl text-orange-300 opacity-30"></i>
-        <div
-          className={`mx-auto max-w-6xl transform transition-all duration-1000 ${isVisible["solutions"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
-        >
+        <div className="mx-auto max-w-6xl transform transition-all duration-1000">
           {" "}
           <SectionHeader
             title="Our Comprehensive Visual Solutions"
@@ -292,6 +305,8 @@ export default function Home() {
               <div
                 key={i}
                 className="hover:scale-102 flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-xl transition-all duration-300 hover:shadow-2xl sm:p-8"
+                data-aos="zoom-in"
+                data-aos-delay={ isMobile ? 0 : 100 + i * 100}
               >
                 <div
                   className="mb-4 text-5xl sm:mb-6 sm:text-6xl"
@@ -337,7 +352,8 @@ export default function Home() {
       <section
         id="industries"
         className="relative overflow-hidden bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
       >
         <i className="fas fa-chart-pie absolute -top-8 left-1/3 z-20 -rotate-6 transform text-5xl text-gray-300 opacity-70"></i>
         <i className="fas fa-map-marker-alt absolute bottom-0 right-1/4 z-20 rotate-6 transform text-5xl text-gray-300 opacity-70"></i>
@@ -346,7 +362,7 @@ export default function Home() {
         <i className="fas fa-flask absolute left-5 top-1/4 text-5xl text-purple-300 opacity-20"></i>
         <i className="fas fa-dollar-sign absolute bottom-1/4 right-5 text-5xl text-yellow-300 opacity-20"></i>
         <div
-          className={`relative z-20 mx-auto max-w-6xl transform text-center transition-all duration-1000 ${isVisible["industries"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
+          className={`relative z-20 mx-auto max-w-6xl transform text-center transition-all duration-1000`}
         >
           {" "}
           <SectionHeader
@@ -401,6 +417,8 @@ export default function Home() {
               <div
                 key={i}
                 className="hover:scale-102 flex flex-col items-center rounded-xl bg-gray-50 p-6 text-center shadow-md transition-all duration-300 hover:shadow-lg"
+                data-aos="fade-up"
+                data-aos-delay={ isMobile ? 0 : 100 + i * 80}
               >
                 <div
                   className="mb-3 text-4xl sm:text-5xl"
@@ -434,7 +452,8 @@ export default function Home() {
 
       <section
         className="relative overflow-hidden bg-white px-4 py-16 sm:px-8 sm:py-24"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
         id="impact"
       >
         <div className="absolute inset-x-0 bottom-0 h-[200px] overflow-hidden">
@@ -452,7 +471,7 @@ export default function Home() {
         <i className="fas fa-award absolute left-5 top-1/2 -translate-y-1/2 transform text-5xl text-green-300 opacity-20"></i>
         <i className="fas fa-check-circle absolute bottom-5 right-5 text-5xl text-red-300 opacity-20"></i>
         <div
-          className={`relative z-10 mx-auto max-w-6xl transform text-center transition-all duration-1000 ${isVisible["impact"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
+          className={`relative z-10 mx-auto max-w-6xl transform text-center transition-all duration-1000`}
         >
           {" "}
           <SectionHeader
@@ -487,6 +506,8 @@ export default function Home() {
               <div
                 key={i}
                 className="transform rounded-xl bg-blue-600/80 p-6 text-white shadow-lg backdrop-blur-sm backdrop-filter transition-all duration-300 hover:scale-105 sm:p-8"
+                data-aos="zoom-in"
+                data-aos-delay={ isMobile ? 0 : 100 + i * 100}
               >
                 {" "}
                 <div
@@ -507,7 +528,8 @@ export default function Home() {
 
       <section
         className="relative bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
         id="featured-project"
       >
         <i className="fas fa-lightbulb left-1/5 absolute -top-8 rotate-6 transform text-5xl text-purple-400 opacity-50"></i>
@@ -517,7 +539,7 @@ export default function Home() {
         <i className="fas fa-eye absolute right-10 top-1/3 text-5xl text-pink-300 opacity-20"></i>
         <i className="fas fa-cogs absolute bottom-1/3 left-10 text-5xl text-teal-300 opacity-20"></i>
         <div
-          className={`mx-auto max-w-6xl transform transition-all duration-1000 ${isVisible["featured-project"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
+          className={`mx-auto max-w-6xl transform transition-all duration-1000`}
         >
           {" "}
           <SectionHeader
@@ -582,17 +604,18 @@ export default function Home() {
 
       <section
         className="relative bg-white px-4 py-16 sm:px-8 sm:py-24"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
         id="process"
       >
         <i className="fas fa-clipboard-list absolute -top-8 left-1/4 -rotate-6 transform text-5xl text-teal-400 opacity-50"></i>
         <i className="fas fa-sync-alt absolute bottom-0 right-1/3 rotate-12 transform text-4xl text-orange-400 opacity-50"></i>
         <i className="fas fa-sitemap -rotate-20 absolute right-10 top-10 transform text-6xl text-blue-300 opacity-20"></i>
-        <i className="fas fa-project-diagram rotate-25 absolute bottom-10 left-10 transform text-6xl text-green-300 opacity-20"></i>
+        <i className="fas fa-sitemap rotate-25 absolute bottom-10 left-10 transform text-6xl text-green-300 opacity-20"></i>
         <i className="fas fa-route absolute left-5 top-1/3 text-5xl text-purple-300 opacity-20"></i>
         <i className="fas fa-hourglass-half absolute bottom-1/3 right-5 text-5xl text-yellow-300 opacity-20"></i>
         <div
-          className={`mx-auto max-w-6xl transform transition-all duration-1000 ${isVisible["process"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
+          className={`mx-auto max-w-6xl transform transition-all duration-1000`}
         >
           {" "}
           <SectionHeader
@@ -634,6 +657,8 @@ export default function Home() {
               <div
                 key={i}
                 className="relative z-10 flex w-full flex-col items-center rounded-xl border-b-4 border-blue-600 bg-gray-50 p-5 text-center shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg md:w-1/5"
+                data-aos="fade-up"
+                data-aos-delay={ isMobile ? 0 : 100 + i * 100}
               >
                 <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-blue-600 text-2xl font-bold text-white sm:mb-4 sm:h-16 sm:w-16 sm:text-3xl">
                   <i className={p.icon}></i>
@@ -663,7 +688,8 @@ export default function Home() {
       <section
         id="technologies"
         className="relative bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
       >
         <i className="fas fa-bezier-curve right-1/5 absolute -top-8 -rotate-6 transform text-5xl text-pink-400 opacity-50"></i>
         <i className="fas fa-code-branch absolute bottom-0 left-1/4 rotate-12 transform text-4xl text-purple-400 opacity-50"></i>
@@ -672,7 +698,7 @@ export default function Home() {
         <i className="fas fa-vr-cardboard absolute left-5 top-1/2 -translate-y-1/2 transform text-5xl text-yellow-300 opacity-20"></i>
         <i className="fas fa-chart-bar absolute bottom-5 right-1/3 text-5xl text-orange-300 opacity-20"></i>
         <div
-          className={`mx-auto max-w-6xl transform transition-all duration-1000 ${isVisible["technologies"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
+          className={`mx-auto max-w-6xl transform transition-all duration-1000`}
         >
           {" "}
           <SectionHeader
@@ -727,6 +753,8 @@ export default function Home() {
               <div
                 key={i}
                 className="hover:scale-102 flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-md transition-all duration-300 hover:shadow-lg"
+                data-aos="zoom-in"
+                data-aos-delay={ isMobile ? 0 : 80 + i * 80}
               >
                 <div
                   className="mb-3 text-4xl sm:text-5xl"
@@ -758,11 +786,12 @@ export default function Home() {
 
       <section
         className="bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
         id="about"
       >
         <div
-          className={`mx-auto max-w-6xl transform transition-all duration-1000 ${isVisible["about"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
+          className={`mx-auto max-w-6xl transform transition-all duration-1000`}
         >
           {" "}
           <SectionHeader
@@ -836,7 +865,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="mt-8 flex w-full justify-center md:mt-0">
+            <div className="mt-8 flex w-full justify-center md:mt-0" data-aos="fade-left" >
               <ImgPlaceholder
                 src={"images/growth.png"}
                 w={600}
@@ -862,13 +891,11 @@ export default function Home() {
 
       <section
         className="bg-white px-4 py-16 sm:px-8 sm:py-24"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
         id="testimonials"
       >
-        <div
-          className={`mx-auto max-w-6xl transform transition-all duration-1000 ${isVisible["testimonials"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
-        >
-          {" "}
+        <div className="mx-auto max-w-6xl">
           <SectionHeader
             title="What Our Valued Clients Say"
             subtitle="Hear directly from the businesses we've helped elevate their visual communication and digital presence."
@@ -912,6 +939,8 @@ export default function Home() {
               <div
                 key={i}
                 className="hover:scale-102 flex flex-col items-center rounded-xl bg-gradient-to-br from-blue-50 to-green-50 p-6 text-center shadow-lg transition-all duration-300 hover:shadow-xl sm:p-8"
+                data-aos="zoom-in"
+                data-aos-delay={ isMobile ? 0 : 100 + i * 120}
               >
                 <blockquote className="text-md mb-4 font-medium italic leading-relaxed text-gray-700 sm:mb-6 sm:text-lg">
                   "{testimonial.quote}"
@@ -948,13 +977,11 @@ export default function Home() {
 
       <section
         className="bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
-        data-animate-on-scroll
+        data-aos="fade-up"
+        
         id="blog"
       >
-        <div
-          className={`mx-auto max-w-6xl transform transition-all duration-1000 ${isVisible["blog"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
-        >
-          {" "}
+        <div className="mx-auto max-w-6xl">
           <SectionHeader
             title="Latest Insights from Open Vision"
             subtitle="Stay ahead with our expert articles on visual trends, design best practices, digital marketing strategies, and creative industry news."
@@ -993,6 +1020,8 @@ export default function Home() {
                 key={i}
                 href={post.link}
                 className="hover:scale-102 block rounded-xl bg-white shadow-xl transition-all duration-300 hover:shadow-2xl"
+                data-aos="fade-up"
+                data-aos-delay={ isMobile ? 0 : 100 + i * 120}
               >
                 <div className="flex w-full justify-center overflow-hidden rounded-t-xl">
                   <ImgPlaceholder
@@ -1036,13 +1065,10 @@ export default function Home() {
 
       <section
         className="flex min-h-[400px] items-center justify-center bg-blue-600 px-4 py-16 text-center text-white sm:px-8 sm:py-24"
-        data-animate-on-scroll
+
         id="contact"
       >
-        <div
-          className={`mx-auto max-w-4xl transform transition-all duration-1000 ${isVisible["contact"] ? "translate-y-0 scale-100 opacity-100" : "translate-y-10 scale-95 opacity-0"}`}
-        >
-          {" "}
+        <div className="mx-auto max-w-4xl">
           {/* UI Elements/Shapes for CTA Section */}
           <i className="fas fa-comment rotate-15 absolute left-10 top-10 transform text-6xl text-blue-400 opacity-30"></i>
           <i className="fas fa-envelope -rotate-15 absolute bottom-10 right-10 transform text-6xl text-green-400 opacity-30"></i>
