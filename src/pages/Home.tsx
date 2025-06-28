@@ -101,7 +101,7 @@ export default function Home() {
     <div className="flex min-h-screen max-w-[100vw] flex-col overflow-hidden bg-gray-50 font-sans text-gray-800 antialiased">
       <section
         id="hero-section"
-        className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-48"
+        className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-32"
 
       >
         <div className="absolute inset-0 z-0 opacity-100">
