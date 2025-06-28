@@ -40,33 +40,7 @@ export default function ServicesPage() {
     );
   };
 
-  interface SectionHeaderProps {
-    title: ReactNode;
-    subtitle: ReactNode;
-    textColor?: string;
-    subtextColor?: string;
-  }
-  const SectionHeader = ({
-    title,
-    subtitle,
-    textColor = COLOR_DARK_TEXT,
-    subtextColor = COLOR_NEUTRAL_TEXT,
-  }: SectionHeaderProps) => (
-    <div className="mb-16 px-4 text-center">
-      <h2
-        className="mb-4 text-4xl font-extrabold sm:text-5xl"
-        style={{ color: textColor }}
-      >
-        {title}
-      </h2>
-      <p
-        className="mx-auto max-w-3xl text-lg sm:text-xl"
-        style={{ color: subtextColor }}
-      >
-        {subtitle}
-      </p>
-    </div>
-  );
+
 
   const services = [
     {
