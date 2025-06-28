@@ -1,9 +1,5 @@
-import { ReactNode } from "react";
-
 export default function VisualStorytellingBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-  const COLOR_DARK_TEXT = "#1F2937";
-  const COLOR_NEUTRAL_TEXT = "#6B7280";
 
   interface ImgPlaceholderProps {
     w: number;
@@ -157,7 +153,7 @@ export default function VisualStorytellingBlogPage() {
             w={600}
             h={200}
             label="Visual Communication Impact"
-            bgColor={COLOR_ACCENT_GREEN.replace("#", "")}
+            bgColor={COLOR_PRIMARY_BLUE.replace("#", "")}
             textColor="FFFFFF"
             src="/images/visualimpact.jpg"
             className="mx-auto my-8 h-auto w-full max-w-2xl"

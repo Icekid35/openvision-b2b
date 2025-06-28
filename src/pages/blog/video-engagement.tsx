@@ -2,8 +2,6 @@ import { ReactNode } from "react";
 
 export default function VideoEngagementBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-  const COLOR_DARK_TEXT = "#1F2937";
-  const COLOR_NEUTRAL_TEXT = "#6B7280";
 
   interface ImgPlaceholderProps {
     w: number;
@@ -159,7 +157,7 @@ export default function VideoEngagementBlogPage() {
             w={600}
             h={350}
             label="B2B Video Marketing"
-            bgColor={COLOR_ACCENT_GREEN.replace("#", "")}
+            bgColor={COLOR_PRIMARY_BLUE.replace("#", "")}
             textColor="FFFFFF"
             src="/images/video.png"
             className="mx-auto my-8 h-auto w-full max-w-2xl"

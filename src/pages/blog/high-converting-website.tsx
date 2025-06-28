@@ -2,16 +2,12 @@ import { ReactNode } from "react";
 
 export default function HighConvertingWebsiteBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-  const COLOR_DARK_TEXT = "#1F2937";
-  const COLOR_NEUTRAL_TEXT = "#6B7280";
 
   interface ImgPlaceholderProps {
     w: number;
     h: number;
     label?: string;
     src?: string;
-    bgColor?: string;
-    textColor?: string;
     className?: string;
     alt?: string;
   }
@@ -20,14 +16,9 @@ export default function HighConvertingWebsiteBlogPage() {
     h,
     label,
     src,
-    bgColor = COLOR_PRIMARY_BLUE.replace("#", ""),
-    textColor = "FFFFFF",
     className = "",
     alt = label,
   }: ImgPlaceholderProps) => {
-    const imageUrl =
-      src ||
-      `https://placehold.co/${w}x${h}/${bgColor}/${textColor}?text=${encodeURIComponent(label || "")}`;
     return (
       <img
         src={"/images/converingwebsite.jpg"}
@@ -55,9 +46,6 @@ export default function HighConvertingWebsiteBlogPage() {
             w={900}
             h={500}
             label="High-Converting Website"
-            bgColor={COLOR_ACCENT_GREEN.replace("#", "")}
-            textColor="FFFFFF"
-            src="https://placehold.co/900x500/10B981/FFFFFF?text=High-Converting+Website"
             className="mx-auto h-auto w-full max-w-4xl"
           />
         </div>
@@ -129,9 +117,6 @@ export default function HighConvertingWebsiteBlogPage() {
             w={600}
             h={350}
             label="Website UX Design"
-            bgColor={COLOR_PRIMARY_BLUE.replace("#", "")}
-            textColor="FFFFFF"
-            src="https://placehold.co/600x350/3B82F6/FFFFFF?text=Website+UX+Design"
             className="mx-auto my-8 h-auto w-full max-w-2xl"
           />
 

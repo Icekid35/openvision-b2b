@@ -1,73 +1,6 @@
-import { ReactNode } from "react";
-
 export default function BrandColorPaletteBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
   const COLOR_ACCENT_GREEN = "#10B981";
-  const COLOR_DARK_TEXT = "#1F2937";
-  const COLOR_NEUTRAL_TEXT = "#6B7280";
-
-  interface ImgPlaceholderProps {
-    w: number;
-    h: number;
-    label?: string;
-    src?: string;
-    bgColor?: string;
-    textColor?: string;
-    className?: string;
-    alt?: string;
-  }
-  const ImgPlaceholder = ({
-    w,
-    h,
-    label,
-    src,
-    bgColor = COLOR_PRIMARY_BLUE.replace("#", ""),
-    textColor = "FFFFFF",
-    className = "",
-    alt = label,
-  }: ImgPlaceholderProps) => {
-    const imageUrl =
-      src ||
-      `https://placehold.co/${w}x${h}/${bgColor}/${textColor}?text=${encodeURIComponent(label || "")}`;
-    return (
-      <img
-        src={"/images/colorpallete.jpg"}
-        alt={alt}
-        width={w}
-        height={h}
-        className={`hover:scale-102 transform rounded-xl shadow-lg transition-transform duration-500 ease-out ${className}`}
-        style={{ objectFit: "cover" }}
-      />
-    );
-  };
-
-  interface SectionHeaderProps {
-    title: ReactNode;
-    subtitle: ReactNode;
-    textColor?: string;
-    subtextColor?: string;
-  }
-  const SectionHeader = ({
-    title,
-    subtitle,
-    textColor = COLOR_DARK_TEXT,
-    subtextColor = COLOR_NEUTRAL_TEXT,
-  }: SectionHeaderProps) => (
-    <div className="mb-16 px-4 text-center">
-      <h2
-        className="mb-4 text-4xl font-extrabold sm:text-5xl"
-        style={{ color: textColor }}
-      >
-        {title}
-      </h2>
-      <p
-        className="mx-auto max-w-3xl text-lg sm:text-xl"
-        style={{ color: subtextColor }}
-      >
-        {subtitle}
-      </p>
-    </div>
-  );
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 font-sans text-gray-800 antialiased">
@@ -80,15 +13,6 @@ export default function BrandColorPaletteBlogPage() {
           <p className="mx-auto mb-4 max-w-3xl text-lg text-gray-600 sm:text-xl md:text-2xl">
             May 15, 2025 | Category: Branding
           </p>
-          <ImgPlaceholder
-            w={900}
-            h={500}
-            label="Color Palette Guide"
-            bgColor={COLOR_PRIMARY_BLUE.replace("#", "")}
-            textColor="FFFFFF"
-            src="https://placehold.co/900x500/3B82F6/FFFFFF?text=Color+Palette+Guide"
-            className="mx-auto h-auto w-full max-w-4xl"
-          />
         </div>
       </section>
 
@@ -159,16 +83,6 @@ export default function BrandColorPaletteBlogPage() {
               especially minimalist brands).
             </li>
           </ul>
-
-          <ImgPlaceholder
-            w={600}
-            h={350}
-            label="Color Psychology Chart"
-            bgColor={COLOR_ACCENT_GREEN.replace("#", "")}
-            textColor="FFFFFF"
-            src="https://placehold.co/600x350/10B981/FFFFFF?text=Color+Psychology+Chart"
-            className="mx-auto my-8 h-auto w-full max-w-2xl"
-          />
 
           <h2
             className="mb-4 text-3xl font-bold"
