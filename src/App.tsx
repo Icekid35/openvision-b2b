@@ -44,90 +44,48 @@ export default function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/industries" element={<Industries />} />
-        <Route path="/case-studies/moderne-furnishings" element={<Moderne />} />
-        <Route path="/process-details" element={<Process />} />
-        <Route path="/technologies-details" element={<Technologies />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/testimonials-page" element={<Testimonials />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/impact" element={<Impact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/get-started" element={<Signup />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/login" element={<Signin />} />
-        <Route path="/forgot-password" element={<ForgetPassword />} />
-        <Route path="/partners" element={<Partners />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/Privacy" element={<Privacy />} />
-        <Route path="/legal" element={<Legal />} />
-        <Route path="/Teams" element={<Teams />} />
-        <Route path="/Team" element={<Teams />} />
-        <Route
-          path="/blog/visual-storytelling"
-          element={<BlogVisualStorytelling />}
-        />
-        <Route path="/blog/ui-ux-trends" element={<BlogUIUXTrends />} />
-        <Route
-          path="/blog/video-engagement"
-          element={<BlogVideoEngagement />}
-        />
-        <Route
-          path="/blog/high-converting-website"
-          element={<BlogHighConvertingWebsite />}
-        />
-        <Route
-          path="/blog/data-driven-marketing"
-          element={<BlogDataDrivenMarketing />}
-        />
-        <Route
-          path="/blog/future-of-immersive-tech"
-          element={<BlogFutureOfImmersiveTech />}
-        />
-        <Route
-          path="/blog/brand-color-palette"
-          element={<BlogBrandColorPalette />}
-        />
-        <Route
-          path="/blog/comprehensive-brand-identity"
-          element={<BlogComprehensiveBrandIdentity />}
-        />
-        <Route
-          path="/portfolio/harmony-health"
-          element={<PortfolioHarmonyHealth />}
-        />
-        <Route
-          path="/portfolio/global-eco-solutions"
-          element={<PortfolioGlobalEcoSolutions />}
-        />
-        <Route
-          path="/portfolio/nexus-fintech"
-          element={<PortfolioNexusFintech />}
-        />
-        <Route
-          path="/portfolio/artisanal-bakery"
-          element={<PortfolioArtisanalBakery />}
-        />
-        <Route
-          path="/portfolio/urban-green-spaces"
-          element={<PortfolioUrbanGreenSpaces />}
-        />
-        <Route
-          path="/portfolio/quantum-ai-labs"
-          element={<PortfolioQuantumAILabs />}
-        />
-        <Route path="/portfolio/edulink" element={<PortfolioEduLink />} />
-        <Route
-          path="/portfolio/aerofleet-logistics"
-          element={<PortfolioAeroFleetLogistics />}
-        />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" Component={Home} />
+        <Route path="about" Component={About} />
+        <Route path="about-us" Component={About} />
+        <Route path="services" Component={Services} />
+        <Route path="industries" Component={Industries} />
+        <Route path="case-studies/moderne-furnishings" Component={Moderne} />
+        <Route path="process-details" Component={Process} />
+        <Route path="technologies-details" Component={Technologies} />
+        <Route path="testimonials" Component={Testimonials} />
+        <Route path="testimonials-page" Component={Testimonials} />
+        <Route path="blog" Component={Blog} />
+        <Route path="contact" Component={Contact} />
+        <Route path="impact" Component={Impact} />
+        <Route path="portfolio" Component={Portfolio} />
+        <Route path="signup" Component={Signup} />
+        <Route path="get-started" Component={Signup} />
+        <Route path="signin" Component={Signin} />
+        <Route path="login" Component={Signin} />
+        <Route path="forgot-password" Component={ForgetPassword} />
+        <Route path="partners" Component={Partners} />
+        <Route path="faq" Component={FAQ} />
+        <Route path="Privacy" Component={Privacy} />
+        <Route path="legal" Component={Legal} />
+        <Route path="Teams" Component={Teams} />
+        <Route path="Team" Component={Teams} />
+        <Route path="blog/visual-storytelling" Component={BlogVisualStorytelling} />
+        <Route path="blog/ui-ux-trends" Component={BlogUIUXTrends} />
+        <Route path="blog/video-engagement" Component={BlogVideoEngagement} />
+        <Route path="blog/high-converting-website" Component={BlogHighConvertingWebsite} />
+        <Route path="blog/data-driven-marketing" Component={BlogDataDrivenMarketing} />
+        <Route path="blog/future-of-immersive-tech" Component={BlogFutureOfImmersiveTech} />
+        <Route path="blog/brand-color-palette" Component={BlogBrandColorPalette} />
+        <Route path="blog/comprehensive-brand-identity" Component={BlogComprehensiveBrandIdentity} />
+        <Route path="portfolio/harmony-health" Component={PortfolioHarmonyHealth} />
+        <Route path="portfolio/global-eco-solutions" Component={PortfolioGlobalEcoSolutions} />
+        <Route path="portfolio/nexus-fintech" Component={PortfolioNexusFintech} />
+        <Route path="portfolio/artisanal-bakery" Component={PortfolioArtisanalBakery} />
+        <Route path="portfolio/urban-green-spaces" Component={PortfolioUrbanGreenSpaces} />
+        <Route path="portfolio/quantum-ai-labs" Component={PortfolioQuantumAILabs} />
+        <Route path="portfolio/edulink" Component={PortfolioEduLink} />
+        <Route path="portfolio/aerofleet-logistics" Component={PortfolioAeroFleetLogistics} />
+        <Route path="*" Component={NotFound} />
       </Routes>
       <Footer />
     </Router>
