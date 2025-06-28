@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function UIUXTrendsBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
 
@@ -155,9 +157,9 @@ export default function UIUXTrendsBlogPage() {
             At Open Vision, we continuously integrate these evolving UI/UX
             trends into our design philosophy, ensuring our clients receive
             cutting-edge, user-centric solutions.{" "}
-            <a href="/contact" className="text-blue-600 hover:underline">
-              Partner with us
-            </a>{" "}
+            <Link to="/contact" className="text-blue-600 hover:underline">
+              Contact Us
+            </Link>{" "}
             to build experiences that are ready for 2026 and beyond.
           </p>
         </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function HighConvertingWebsiteBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
@@ -185,9 +186,9 @@ export default function HighConvertingWebsiteBlogPage() {
             Vision, we combine aesthetic brilliance with strategic UX principles
             to build websites that don't just impress, but also deliver tangible
             results.{" "}
-            <a href="/contact" className="text-blue-600 hover:underline">
-              Connect with us
-            </a>{" "}
+            <Link to="/contact" className="text-blue-600 hover:underline">
+              Contact Us
+            </Link>{" "}
             to transform your website into a conversion powerhouse.
           </p>
         </div>

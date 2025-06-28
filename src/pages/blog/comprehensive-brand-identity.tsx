@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ComprehensiveBrandIdentityBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
   interface ImgPlaceholderProps {
@@ -163,9 +165,9 @@ export default function ComprehensiveBrandIdentityBlogPage() {
             ourselves in your brand's DNA to craft comprehensive brand
             identities that tell your unique story, resonate with your audience,
             and drive your business forward.{" "}
-            <a href="/contact" className="text-blue-600 hover:underline">
-              Let's build a brand identity
-            </a>{" "}
+            <Link to="/contact" className="text-blue-600 hover:underline">
+              Contact Us
+            </Link>{" "}
             that's truly iconic.
           </p>
         </div>

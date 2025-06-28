@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function BrandColorPaletteBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
 
@@ -132,10 +134,10 @@ export default function BrandColorPaletteBlogPage() {
             At Open Vision, our expert designers delve deep into color
             psychology and brand strategy to craft palettes that not only look
             stunning but also resonate powerfully with your audience.{" "}
-            <a href="/contact" className="text-blue-600 hover:underline">
-              Let's create a visual identity
-            </a>{" "}
-            that truly captures your brand's essence.
+            <Link to="/contact" className="text-blue-600 hover:underline">
+              Contact Us
+            </Link>{" "}
+            to discuss how we can help elevate your brand's visual identity.
           </p>
         </div>
       </section>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function VisualStorytellingBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
 
@@ -178,9 +180,9 @@ export default function VisualStorytellingBlogPage() {
 
           <p className="mt-8 italic text-gray-600">
             Ready to harness the power of visual storytelling for your brand?{" "}
-            <a href="/contact" className="text-blue-600 hover:underline">
-              Contact Open Vision today
-            </a>{" "}
+            <Link to="/contact" className="text-blue-600 hover:underline">
+              Contact Us
+            </Link>{" "}
             to discuss your next project.
           </p>
         </div>

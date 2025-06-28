@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function VideoEngagementBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
@@ -174,9 +175,9 @@ export default function VideoEngagementBlogPage() {
 
           <p className="mt-8 italic text-gray-600">
             Ready to integrate powerful video into your B2B strategy?{" "}
-            <a href="/contact" className="text-blue-600 hover:underline">
-              Contact Open Vision today
-            </a>{" "}
+            <Link to="/contact" className="text-blue-600 hover:underline">
+              Contact Us
+            </Link>{" "}
             for a consultation on your video production needs.
           </p>
         </div>

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 export default function LegalPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
@@ -241,9 +242,9 @@ export default function LegalPage() {
               <li>By phone: (123) 456-VISUAL</li>
               <li>
                 By visiting this page on our website:{" "}
-                <a href="/contact" className="text-blue-600 hover:underline">
-                  /contact
-                </a>
+                <Link to="/contact" className="text-blue-600 hover:underline">
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>

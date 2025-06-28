@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function DataDrivenMarketingBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
 
@@ -137,9 +139,9 @@ export default function DataDrivenMarketingBlogPage() {
 
           <p className="mt-8 italic text-gray-600">
             Ready to transform your digital marketing with data-driven insights?{" "}
-            <a href="/contact" className="text-blue-600 hover:underline">
-              Contact Open Vision today
-            </a>{" "}
+            <Link to="/contact" className="text-blue-600 hover:underline">
+              Contact Us
+            </Link>{" "}
             for a strategic consultation.
           </p>
         </div>

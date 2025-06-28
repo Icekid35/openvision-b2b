@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const COLOR_ACCENT_GREEN = "#10B981"; // A lively, fresh green for highlights
 const COLOR_PRIMARY_BLUE = "#3B82F6"; // Primary blue color for branding
 const Footer: React.FC = () => (
@@ -7,16 +8,19 @@ const Footer: React.FC = () => (
       <div>
         <h4
           className="mb-4 text-xl font-bold text-white sm:mb-6 sm:text-2xl"
-          style={{ fontFamily: "'Dancing Script', cursive" ,color:COLOR_PRIMARY_BLUE}}
-        >
-        <span
           style={{
-            color: COLOR_ACCENT_GREEN,
+            fontFamily: "'Dancing Script', cursive",
+            color: COLOR_PRIMARY_BLUE,
           }}
         >
-          Open
-        </span>{" "}
-        Vision
+          <span
+            style={{
+              color: COLOR_ACCENT_GREEN,
+            }}
+          >
+            Open
+          </span>{" "}
+          Vision
         </h4>
         <p className="sm:text-md mb-4 text-sm leading-relaxed sm:mb-6">
           Your partner in leveraging visual storytelling and digital design for
@@ -55,49 +59,52 @@ const Footer: React.FC = () => (
         </h4>
         <ul className="sm:text-md space-y-2 text-sm sm:space-y-3">
           <li>
-            <a href="/" className="transition duration-200 hover:text-blue-500">
+            <Link
+              to="/"
+              className="transition duration-200 hover:text-blue-500"
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="transition duration-200 hover:text-blue-500"
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/services"
+            <Link
+              to="/services"
               className="transition duration-200 hover:text-blue-500"
             >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/industries"
+            <Link
+              to="/industries"
               className="transition duration-200 hover:text-blue-500"
             >
               Industries
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/partners"
+            <Link
+              to="/partners"
               className="transition duration-200 hover:text-blue-500"
             >
               Partners
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="transition duration-200 hover:text-blue-500"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -107,76 +114,76 @@ const Footer: React.FC = () => (
         </h4>
         <ul className="sm:text-md space-y-2 text-sm sm:space-y-3">
           <li>
-            <a
-              href="/blog"
+            <Link
+              to="/blog"
               className="transition duration-200 hover:text-blue-500"
             >
               All Blog Posts
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/blog/visual-storytelling"
+            <Link
+              to="/blog/visual-storytelling"
               className="transition duration-200 hover:text-blue-500"
             >
               Visual Storytelling
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/blog/ui-ux-trends"
+            <Link
+              to="/blog/ui-ux-trends"
               className="transition duration-200 hover:text-blue-500"
             >
               UI/UX Trends
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/blog/video-engagement"
+            <Link
+              to="/blog/video-engagement"
               className="transition duration-200 hover:text-blue-500"
             >
               Video Engagement
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/blog/high-converting-website"
+            <Link
+              to="/blog/high-converting-website"
               className="transition duration-200 hover:text-blue-500"
             >
               High-Converting Website
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/blog/data-driven-marketing"
+            <Link
+              to="/blog/data-driven-marketing"
               className="transition duration-200 hover:text-blue-500"
             >
               Data-Driven Marketing
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/blog/future-of-immersive-tech"
+            <Link
+              to="/blog/future-of-immersive-tech"
               className="transition duration-200 hover:text-blue-500"
             >
               Immersive Tech
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/blog/brand-color-palette"
+            <Link
+              to="/blog/brand-color-palette"
               className="transition duration-200 hover:text-blue-500"
             >
               Brand Color Palette
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/blog/comprehensive-brand-identity"
+            <Link
+              to="/blog/comprehensive-brand-identity"
               className="transition duration-200 hover:text-blue-500"
             >
               Comprehensive Brand Identity
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -186,76 +193,76 @@ const Footer: React.FC = () => (
         </h4>
         <ul className="sm:text-md space-y-2 text-sm sm:space-y-3">
           <li>
-            <a
-              href="/portfolio"
+            <Link
+              to="/portfolio"
               className="transition duration-200 hover:text-blue-500"
             >
               All Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/portfolio/harmony-health"
+            <Link
+              to="/portfolio/harmony-health"
               className="transition duration-200 hover:text-blue-500"
             >
               Harmony Health
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/portfolio/global-eco-solutions"
+            <Link
+              to="/portfolio/global-eco-solutions"
               className="transition duration-200 hover:text-blue-500"
             >
               Global Eco Solutions
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/portfolio/nexus-fintech"
+            <Link
+              to="/portfolio/nexus-fintech"
               className="transition duration-200 hover:text-blue-500"
             >
               Nexus Fintech
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/portfolio/artisanal-bakery"
+            <Link
+              to="/portfolio/artisanal-bakery"
               className="transition duration-200 hover:text-blue-500"
             >
               Artisanal Bakery
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/portfolio/urban-green-spaces"
+            <Link
+              to="/portfolio/urban-green-spaces"
               className="transition duration-200 hover:text-blue-500"
             >
               Urban Green Spaces
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/portfolio/quantum-ai-labs"
+            <Link
+              to="/portfolio/quantum-ai-labs"
               className="transition duration-200 hover:text-blue-500"
             >
               Quantum AI Labs
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/portfolio/edulink"
+            <Link
+              to="/portfolio/edulink"
               className="transition duration-200 hover:text-blue-500"
             >
               EduLink
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/portfolio/aerofleet-logistics"
+            <Link
+              to="/portfolio/aerofleet-logistics"
               className="transition duration-200 hover:text-blue-500"
             >
               AeroFleet Logistics
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -265,105 +272,105 @@ const Footer: React.FC = () => (
         </h4>
         <ul className="sm:text-md space-y-2 text-sm sm:space-y-3">
           <li>
-            <a
-              href="/impact"
+            <Link
+              to="/impact"
               className="transition duration-200 hover:text-blue-500"
             >
               Our Impact
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/process-details"
+            <Link
+              to="/process-details"
               className="transition duration-200 hover:text-blue-500"
             >
               Our Process
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/testimonials"
+            <Link
+              to="/testimonials"
               className="transition duration-200 hover:text-blue-500"
             >
               Testimonials
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/partners"
+            <Link
+              to="/partners"
               className="transition duration-200 hover:text-blue-500"
             >
               Partners
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/faq"
+            <Link
+              to="/faq"
               className="transition duration-200 hover:text-blue-500"
             >
               FAQ
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/signup"
+            <Link
+              to="/signup"
               className="transition duration-200 hover:text-blue-500"
             >
               Sign Up
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/signin"
+            <Link
+              to="/signin"
               className="transition duration-200 hover:text-blue-500"
             >
               Sign In
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/forgot-password"
+            <Link
+              to="/forgot-password"
               className="transition duration-200 hover:text-blue-500"
             >
               Forgot Password
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/legal"
+            <Link
+              to="/legal"
               className="transition duration-200 hover:text-blue-500"
             >
               Legal
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/privacy"
+            <Link
+              to="/privacy"
               className="transition duration-200 hover:text-blue-500"
             >
               Privacy Policy
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/teams"
+            <Link
+              to="/teams"
               className="transition duration-200 hover:text-blue-500"
             >
               Teams
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
     </div>
     <div className="mt-8 border-t border-gray-700 pt-6 text-center text-xs text-gray-500 sm:mt-12 sm:pt-8 sm:text-sm">
       © {new Date().getFullYear()} Open Vision. All rights reserved. |
-      <a href="/privacy-policy" className="ml-2 hover:text-blue-500">
+      <Link to="/privacy-policy" className="ml-2 hover:text-blue-500">
         Privacy Policy
-      </a>{" "}
+      </Link>{" "}
       |
-      <a href="/terms-of-service" className="ml-2 hover:text-blue-500">
+      <Link to="/terms-of-service" className="ml-2 hover:text-blue-500">
         Terms of Service
-      </a>
+      </Link>
     </div>
   </footer>
 );

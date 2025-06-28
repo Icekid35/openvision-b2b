@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function FutureOfImmersiveTechBlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
-   interface ImgPlaceholderProps {
+  interface ImgPlaceholderProps {
     w: number;
     h: number;
     label?: string;
@@ -8,7 +10,7 @@ export default function FutureOfImmersiveTechBlogPage() {
     className?: string;
     alt?: string;
   }
-   const ImgPlaceholder = ({
+  const ImgPlaceholder = ({
     w,
     h,
     label,
@@ -43,7 +45,6 @@ export default function FutureOfImmersiveTechBlogPage() {
             w={900}
             h={500}
             label="AR/VR in Business"
-
             src="https://placehold.co/900x500/10B981/FFFFFF?text=AR/VR+in+Business"
             className="mx-auto h-auto w-full max-w-4xl"
           />
@@ -112,7 +113,6 @@ export default function FutureOfImmersiveTechBlogPage() {
             w={600}
             h={350}
             label="Immersive Tech Solutions"
-
             src="https://placehold.co/600x350/3B82F6/FFFFFF?text=Immersive+Tech+Solutions"
             className="mx-auto my-8 h-auto w-full max-w-2xl"
           />
@@ -142,9 +142,9 @@ export default function FutureOfImmersiveTechBlogPage() {
           <p className="mt-8 italic text-gray-600">
             Ready to explore how AR and VR can transform your business? Open
             Vision specializes in developing custom immersive experiences.{" "}
-            <a href="/contact" className="text-blue-600 hover:underline">
-              Contact us today
-            </a>{" "}
+            <Link to="/contact" className="text-blue-600 hover:underline">
+              Contact Us
+            </Link>{" "}
             to discuss your project.
           </p>
         </div>

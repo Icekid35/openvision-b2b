@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 // import { useLocation } from "react-router-dom";
 
 const COLOR_PRIMARY_BLUE = "#3B82F6";
@@ -17,7 +18,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   // const location = useLocation();
-  const isHome =false // location.pathname === "/";
+  const isHome = false; // location.pathname === "/";
   useEffect(() => {
     const fontLink = document.createElement("link");
     fontLink.href =
@@ -42,8 +43,8 @@ const Header: React.FC = () => {
         hasScrolled || isMenuOpen ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <a
-        href="/"
+      <Link
+        to="/"
         className="text-2xl font-extrabold tracking-wide sm:text-3xl"
         style={{
           color: COLOR_PRIMARY_BLUE,
@@ -59,7 +60,7 @@ const Header: React.FC = () => {
           Open
         </span>{" "}
         Vision
-      </a>
+      </Link>
       <div className="flex items-center sm:hidden">
         <button
           className="text-2xl text-gray-700 focus:outline-none"
@@ -77,23 +78,23 @@ const Header: React.FC = () => {
       >
         <nav className="flex flex-col space-y-2 text-sm sm:flex-row sm:space-x-4 sm:space-y-0 sm:text-lg md:space-x-8">
           {navLinks.map((link) => (
-            <a
+            <Link
+              to={isHome ? link.hash : link.path}
               key={link.label}
-              href={isHome ? link.hash : link.path}
               className="block py-1 text-center font-medium text-gray-700 transition duration-200 hover:text-blue-600"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
-        <a
-          href={isHome ? "/get-started" : "/get-started"}
+        <Link
+          to={isHome ? "/get-started" : "/get-started"}
           className="transform rounded-lg bg-[#3B82F6] px-5 py-2 text-sm font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:ring-4 sm:px-6 sm:py-3 sm:text-lg"
           onClick={() => setIsMenuOpen(false)}
         >
           Get Started
-        </a>
+        </Link>
       </div>
     </header>
   );
