@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 export default function BlogPage() {
   const COLOR_PRIMARY_BLUE = "#3B82F6";
@@ -175,9 +176,9 @@ export default function BlogPage() {
           />
           <div className="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post, i) => (
-              <a
+              <Link
                 key={i}
-                href={post.link}
+                to={post.link}
                 className="hover:scale-102 block rounded-xl bg-white shadow-xl transition-all duration-300 hover:shadow-2xl"
               >
                 <div className="flex w-full justify-center overflow-hidden rounded-t-xl">
@@ -212,7 +213,7 @@ export default function BlogPage() {
                     <i className="fas fa-arrow-right ml-1 text-xs sm:text-sm"></i>
                   </p>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="mt-12 text-center sm:mt-16">
@@ -259,12 +260,12 @@ export default function BlogPage() {
       </section>
 
       <div className="bg-gray-50 py-12 text-center">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-flex transform items-center rounded-lg bg-blue-600 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-700 sm:px-8 sm:py-4"
         >
           <i className="fas fa-arrow-left mr-2 sm:mr-3"></i> Back to Home
-        </a>
+        </Link>
       </div>
 
       <link

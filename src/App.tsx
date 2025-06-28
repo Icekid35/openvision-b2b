@@ -39,58 +39,59 @@ import PortfolioUrbanGreenSpaces from "./pages/portfolio/urban-green-spaces";
 import PortfolioQuantumAILabs from "./pages/portfolio/quantum-ai-labs";
 import PortfolioEduLink from "./pages/portfolio/edulink";
 import PortfolioAeroFleetLogistics from "./pages/portfolio/aerofleet-logistics";
-import { useEffect, useState } from 'react'
-import AnimatedCursor from 'react-animated-cursor'
+import { useEffect, useState } from "react";
+import AnimatedCursor from "react-animated-cursor";
+import ScrollToTop from "./components/ScrollToTop";
 export default function App() {
-   const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
+      setIsMobile(window.innerWidth <= 768);
+    };
 
-    handleResize()
+    handleResize();
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <Router>
+      <ScrollToTop />
       <Header />
-              {!isMobile && (
-          <AnimatedCursor
-            innerSize={12}
-            outerSize={35}
-            innerScale={1}
-            outerScale={2.3}
-            color="#3B82F6"
-            // outerAlpha={2}
-            trailingSpeed={10}
-            outerStyle={{
-              border: '2px solid #3B82F6',
-              filter: 'difference',
-              backdropFilter: 'difference',
-
-            }}
-            innerStyle={{
-              backgroundColor: '#3B82F6',
-            }}
-            clickables={[
-              'a',
-              'button',
-              '.link',
-              '.btn',
-              '.cursor-link',
-              '.cursor-button',
-              '.cursor-hover',
-              '.cursor-pointer',
-            ]}
-          />
-        )}
+      {!isMobile && (
+        <AnimatedCursor
+          innerSize={12}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2.3}
+          color="#3B82F6"
+          // outerAlpha={2}
+          trailingSpeed={10}
+          outerStyle={{
+            border: "2px solid #3B82F6",
+            filter: "difference",
+            backdropFilter: "difference",
+          }}
+          innerStyle={{
+            backgroundColor: "#3B82F6",
+          }}
+          clickables={[
+            "a",
+            "button",
+            ".link",
+            ".btn",
+            ".cursor-link",
+            ".cursor-button",
+            ".cursor-hover",
+            ".cursor-pointer",
+          ]}
+        />
+      )}
       {/* <MinimalNav /> */}
       <Routes>
         <Route path="/" Component={Home} />
@@ -118,22 +119,61 @@ export default function App() {
         <Route path="/legal" Component={Legal} />
         <Route path="/Teams" Component={Teams} />
         <Route path="/Team" Component={Teams} />
-        <Route path="/blog/visual-storytelling" Component={BlogVisualStorytelling} />
+        <Route
+          path="/blog/visual-storytelling"
+          Component={BlogVisualStorytelling}
+        />
         <Route path="/blog/ui-ux-trends" Component={BlogUIUXTrends} />
         <Route path="/blog/video-engagement" Component={BlogVideoEngagement} />
-        <Route path="/blog/high-converting-website" Component={BlogHighConvertingWebsite} />
-        <Route path="/blog/data-driven-marketing" Component={BlogDataDrivenMarketing} />
-        <Route path="/blog/future-of-immersive-tech" Component={BlogFutureOfImmersiveTech} />
-        <Route path="/blog/brand-color-palette" Component={BlogBrandColorPalette} />
-        <Route path="/blog/comprehensive-brand-identity" Component={BlogComprehensiveBrandIdentity} />
-        <Route path="/portfolio/harmony-health" Component={PortfolioHarmonyHealth} />
-        <Route path="/portfolio/global-eco-solutions" Component={PortfolioGlobalEcoSolutions} />
-        <Route path="/portfolio/nexus-fintech" Component={PortfolioNexusFintech} />
-        <Route path="/portfolio/artisanal-bakery" Component={PortfolioArtisanalBakery} />
-        <Route path="/portfolio/urban-green-spaces" Component={PortfolioUrbanGreenSpaces} />
-        <Route path="/portfolio/quantum-ai-labs" Component={PortfolioQuantumAILabs} />
+        <Route
+          path="/blog/high-converting-website"
+          Component={BlogHighConvertingWebsite}
+        />
+        <Route
+          path="/blog/data-driven-marketing"
+          Component={BlogDataDrivenMarketing}
+        />
+        <Route
+          path="/blog/future-of-immersive-tech"
+          Component={BlogFutureOfImmersiveTech}
+        />
+        <Route
+          path="/blog/brand-color-palette"
+          Component={BlogBrandColorPalette}
+        />
+        <Route
+          path="/blog/comprehensive-brand-identity"
+          Component={BlogComprehensiveBrandIdentity}
+        />
+        <Route
+          path="/portfolio/harmony-health"
+          Component={PortfolioHarmonyHealth}
+        />
+        <Route
+          path="/portfolio/global-eco-solutions"
+          Component={PortfolioGlobalEcoSolutions}
+        />
+        <Route
+          path="/portfolio/nexus-fintech"
+          Component={PortfolioNexusFintech}
+        />
+        <Route
+          path="/portfolio/artisanal-bakery"
+          Component={PortfolioArtisanalBakery}
+        />
+        <Route
+          path="/portfolio/urban-green-spaces"
+          Component={PortfolioUrbanGreenSpaces}
+        />
+        <Route
+          path="/portfolio/quantum-ai-labs"
+          Component={PortfolioQuantumAILabs}
+        />
         <Route path="/portfolio/edulink" Component={PortfolioEduLink} />
-        <Route path="/portfolio/aerofleet-logistics" Component={PortfolioAeroFleetLogistics} />
+        <Route
+          path="/portfolio/aerofleet-logistics"
+          Component={PortfolioAeroFleetLogistics}
+        />
         <Route path="*" Component={NotFound} />
       </Routes>
       <Footer />
