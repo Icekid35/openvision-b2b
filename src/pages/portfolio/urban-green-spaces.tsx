@@ -129,7 +129,7 @@ export default function UrbanGreenSpacesPortfolioPage() {
                 Our Solution: Photorealistic 3D & Interactive Tours
               </h3>
               <p>
-                Open Vision provided a comprehensive 3D architectural
+                Open Visual provided a comprehensive 3D architectural
                 visualization solution for Urban Green Spaces. We created a
                 series of photorealistic exterior and interior renders,
                 showcasing the stunning design, green features, and integrated
@@ -255,7 +255,7 @@ export default function UrbanGreenSpacesPortfolioPage() {
             </div>
           </div>
           <p className="mx-auto mt-12 max-w-3xl text-lg leading-relaxed opacity-90">
-            Open Vision's advanced 3D architectural visualizations were a
+            Open Visual's advanced 3D architectural visualizations were a
             game-changer for Urban Green Spaces, transforming abstract
             blueprints into tangible, desirable living environments and
             significantly boosting their market appeal.

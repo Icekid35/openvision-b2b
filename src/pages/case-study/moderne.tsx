@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
-// Business Concept: Open Vision - Your Vision, Our Visual Mastery.
+// Business Concept: Open Visual - Your Vision, Our Visual Mastery.
 // This component provides a detailed case study for Moderne Furnishings.
 
 export default function ModerneFurnishingsCaseStudy() {
@@ -87,7 +87,7 @@ export default function ModerneFurnishingsCaseStudy() {
             Transformation
           </h1>
           <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600 sm:mb-10 sm:text-xl md:text-2xl">
-            Discover how Open Vision redefined the visual identity and digital
+            Discover how Open Visual redefined the visual identity and digital
             presence for a leading furniture brand.
           </p>
           <ImgPlaceholder
@@ -136,7 +136,7 @@ export default function ModerneFurnishingsCaseStudy() {
                 Our Strategic Approach: A Full-Spectrum Visual Transformation
               </h3>
               <p>
-                Open Vision embarked on a comprehensive journey with Moderne
+                Open Visual embarked on a comprehensive journey with Moderne
                 Furnishings, beginning with in-depth market research and
                 stakeholder workshops. Our approach was multifaceted, focusing
                 on re-establishing a strong, aspirational brand identity and
@@ -324,7 +324,7 @@ export default function ModerneFurnishingsCaseStudy() {
           <p className="mx-auto mt-12 max-w-3xl text-lg leading-relaxed opacity-90">
             This project not only revitalized Moderne Furnishings' brand image
             but also significantly boosted their digital performance and market
-            standing. Open Vision continues to partner with Moderne Furnishings
+            standing. Open Visual continues to partner with Moderne Furnishings
             on ongoing digital strategies, ensuring sustained growth and
             innovation.
           </p>

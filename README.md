@@ -1,6 +1,6 @@
-# Open Vision B2B Service Platform
+# Open Visual B2B Service Platform
 
-A modern, visually engaging B2B service website built with React, TypeScript, Tailwind CSS, and Vite. This project showcases digital services, blog insights, and a rich portfolio, with a focus on enterprise-grade design, accessibility, and smooth user experience.
+A modern, visually engaging B2B service website built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. This project showcases digital services, blog insights, and a rich portfolio, with a focus on enterprise-grade design, accessibility, and smooth user experience.
 
 ---
 
@@ -24,12 +24,14 @@ A modern, visually engaging B2B service website built with React, TypeScript, Ta
 - **Modern UI/UX**: Responsive, accessible, and visually appealing layouts using Tailwind CSS.
 - **Componentized Architecture**: Header, Footer, and navigation are modular and reusable.
 - **Dynamic Routing**: Uses React Router for seamless navigation between pages and detail views.
+- **SPA Navigation**: All internal navigation uses `<Link>` from `react-router-dom` for fast, client-side transitions.
+- **Scroll Restoration**: Each page automatically scrolls to the top on navigation.
 - **Blog & Portfolio**: Dedicated pages for blog posts and portfolio projects, each with detail subpages.
 - **Contact & Forms**: Interactive contact form with validation and success feedback.
 - **SEO Ready**: Semantic HTML, meta tags, and best practices for discoverability.
-- **Dark/Light Color Palette**: Consistent branding with primary blue and accent green.
+- **Premium Typography**: Uses the Inter font globally for a clean, modern, and premium feel.
+- **Consistent Branding**: Primary blue and accent green color palette.
 - **Scroll Effects**: Animated header and section reveals on scroll.
-- **No Comments in Code**: Clean, production-ready codebase.
 
 ---
 
@@ -40,14 +42,15 @@ b2b service/
 ├── public/
 │   └── images/           # All static images and assets
 ├── src/
-│   ├── components/       # Header, Footer, MinimalNav, etc.
+│   ├── components/       # Header, Footer, MinimalNav, ScrollToTop, etc.
 │   ├── pages/            # Main pages (Home, About, Services, etc.)
 │   │   ├── blog/         # Blog detail pages
-│   │   └── portfolio/    # Portfolio detail pages
-│   ├── App.tsx           # Main app with all routes
-│   ├── global.css        # Tailwind and global styles
+│   │   ├── portfolio/    # Portfolio detail pages
+│   │   └── case-study/   # Case study detail pages
+│   ├── App.tsx           # Main app with all routes and scroll restoration
+│   ├── global.css        # Tailwind and global styles (Inter font, scrollbar, etc.)
 │   └── main.tsx          # App entry point
-├── index.html
+├── index.html            # Loads Inter font from Google Fonts
 ├── package.json
 ├── tailwind.config.js
 ├── postcss.config.js
@@ -99,11 +102,11 @@ b2b service/
 ## Tech Stack
 
 - **Frontend:** React 18, TypeScript, Vite
-- **Styling:** Tailwind CSS, PostCSS, Prettier
+- **Styling:** Tailwind CSS, tailwindcss-animate, PostCSS
 - **Routing:** React Router DOM v6
-- **UI Libraries:** Radix UI, Lucide React, Animate.css, Swiper, Embla Carousel
-- **Icons:** Font Awesome, Phosphor Icons, Lucide
-- **Other:** ESLint, Prettier, Rocketseat config
+- **UI/UX:** AOS (Animate On Scroll), react-animated-cursor
+- **Linting/Formatting:** ESLint, Prettier, Prettier-plugin-tailwindcss
+- **Build Tools:** Vite, TypeScript, PostCSS, Autoprefixer
 
 ---
 
@@ -113,8 +116,9 @@ b2b service/
 - **Accent Green:** `#10B981`
 - **Dark Text:** `#1F2937`
 - **Neutral Text:** `#6B7280`
+- **Typography:** Uses [Inter](https://fonts.google.com/specimen/Inter) globally for a premium, modern look.
 - **Consistent Spacing:** Uses Tailwind’s spacing and responsive utilities.
-- **Typography:** Modern, readable fonts with custom script for branding.
+- **Branding:** Easily adjustable color constants in each page/component.
 
 ---
 
@@ -123,9 +127,10 @@ b2b service/
 - **Main Pages:** `/`, `/about`, `/services`, `/portfolio`, `/blog`, `/contact`, `/faq`, `/legal`, `/privacy`, `/partners`, `/testimonials`, `/signin`, `/signup`, `/teams`, `/impact`, `/technologies`
 - **Blog Details:** `/blog/[slug]` (e.g., `/blog/visual-storytelling`)
 - **Portfolio Details:** `/portfolio/[slug]` (e.g., `/portfolio/harmony-health`)
+- **Case Studies:** `/case-study/[slug]`
 - **404 Handling:** Unmatched routes render the NotFound page.
 
-Navigation is handled globally via the `Header` and `Footer` components.
+Navigation is handled globally via the `Header` and `Footer` components. All internal navigation uses `<Link>` for SPA transitions. The `ScrollToTop` component ensures each page starts at the top.
 
 ---
 
@@ -135,6 +140,7 @@ Navigation is handled globally via the `Header` and `Footer` components.
 - **Add Portfolio Projects:** Create new files in `src/pages/portfolio/` and add routes in `App.tsx`.
 - **Edit Navigation:** Update `src/components/Header.tsx` and `Footer.tsx`.
 - **Branding:** Adjust color constants in each page/component as needed.
+- **Typography:** To change the global font, update the `font-family` in `src/global.css` and the font link in `index.html`.
 
 ---
 
@@ -154,8 +160,6 @@ This project is licensed under the MIT License.
 
 ---
 
-**Open Vision – Your Vision, Our Visual Mastery.**
+**Open Visual – Your Vision, Our Visual Mastery.**
 
 ---
-
-Let me know if you want to add deployment instructions, environment variables, or any other custom section!

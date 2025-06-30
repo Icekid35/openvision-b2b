@@ -72,7 +72,7 @@ export default function TestimonialsPage() {
   const testimonials = [
     {
       quote:
-        "“Open Vision completely transformed our brand identity and delivered a website that truly reflects our premium services. Outstanding work!”",
+        "“Open Visual completely transformed our brand identity and delivered a website that truly reflects our premium services. Outstanding work!”",
       name: "Sarah Chen",
       title: "Marketing Director, Elite Holdings",
       avatarSrc:
@@ -81,7 +81,7 @@ export default function TestimonialsPage() {
     },
     {
       quote:
-        "“The video production team at Open Vision created an animated explainer that perfectly communicates our complex product. Highly recommended!”",
+        "“The video production team at Open Visual created an animated explainer that perfectly communicates our complex product. Highly recommended!”",
       name: "Michael Ramirez",
       title: "Product Manager, TechSolutions Inc.",
       avatarSrc:
@@ -90,7 +90,7 @@ export default function TestimonialsPage() {
     },
     {
       quote:
-        "“Our new e-commerce site designed by Open Vision is visually stunning and incredibly user-friendly. We've seen a significant increase in sales.”",
+        "“Our new e-commerce site designed by Open Visual is visually stunning and incredibly user-friendly. We've seen a significant increase in sales.”",
       name: "Jessica Kim",
       title: "CEO, Global Retail Co.",
       avatarSrc: "https://placehold.co/80x80/6f42c1/ffffff/png?text=JK",
@@ -98,7 +98,7 @@ export default function TestimonialsPage() {
     },
     {
       quote:
-        "“The attention to detail and strategic thinking from Open Vision's design team is unparalleled. Our new branding has truly elevated our market position.”",
+        "“The attention to detail and strategic thinking from Open Visual's design team is unparalleled. Our new branding has truly elevated our market position.”",
       name: "Dr. Alex Johnson",
       title: "Founder, BioInnovate Labs",
       avatarSrc:
@@ -107,7 +107,7 @@ export default function TestimonialsPage() {
     },
     {
       quote:
-        "“Open Vision delivered a responsive website that not only looks fantastic but also performs exceptionally well across all devices. A truly professional partner.”",
+        "“Open Visual delivered a responsive website that not only looks fantastic but also performs exceptionally well across all devices. A truly professional partner.”",
       name: "Emily White",
       title: "Operations Manager, Global Logistics",
       avatarSrc: "https://placehold.co/80x80/10B981/ffffff/png?text=EW",
@@ -123,7 +123,7 @@ export default function TestimonialsPage() {
     },
     {
       quote:
-        "“We are incredibly impressed with the 3D visualizations for our new product line. Open Vision brought our concepts to life with stunning realism.”",
+        "“We are incredibly impressed with the 3D visualizations for our new product line. Open Visual brought our concepts to life with stunning realism.”",
       name: "Sophia Martinez",
       title: "Product Designer, Innovate Tech",
       avatarSrc:
@@ -132,7 +132,7 @@ export default function TestimonialsPage() {
     },
     {
       quote:
-        "“The digital marketing campaign designed by Open Vision significantly boosted our online engagement and lead generation. They truly understand visual impact.”",
+        "“The digital marketing campaign designed by Open Visual significantly boosted our online engagement and lead generation. They truly understand visual impact.”",
       name: "Mark Thompson",
       title: "Sales Director, Prime Realty",
       avatarSrc: "https://placehold.co/80x80/10B981/ffffff/png?text=MT",

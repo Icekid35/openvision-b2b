@@ -226,7 +226,7 @@ export default function ContactUsPage() {
               >
                 Email Us
               </h3>
-              <p className="text-lg text-gray-700">info@openvision.co</p>
+              <p className="text-lg text-gray-700">info@openvisual.co</p>
             </div>
             <div className="rounded-xl bg-white p-6 shadow-xl sm:p-8">
               <div
@@ -255,7 +255,7 @@ export default function ContactUsPage() {
             </h3>
             <div className="flex justify-center space-x-6 sm:space-x-8">
               <a
-                href="https://twitter.com/openvision"
+                href="https://twitter.com/openvisual"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 transition duration-200 hover:text-blue-600"
@@ -263,7 +263,7 @@ export default function ContactUsPage() {
                 <i className="fab fa-twitter text-4xl"></i>
               </a>
               <a
-                href="https://linkedin.com/company/openvision"
+                href="https://linkedin.com/company/openvisual"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 transition duration-200 hover:text-blue-600"
@@ -271,7 +271,7 @@ export default function ContactUsPage() {
                 <i className="fab fa-linkedin-in text-4xl"></i>
               </a>
               <a
-                href="https://facebook.com/openvision"
+                href="https://facebook.com/openvisual"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 transition duration-200 hover:text-blue-600"
@@ -279,7 +279,7 @@ export default function ContactUsPage() {
                 <i className="fab fa-facebook-f text-4xl"></i>
               </a>
               <a
-                href="https://instagram.com/openvision"
+                href="https://instagram.com/openvisual"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 transition duration-200 hover:text-blue-600"

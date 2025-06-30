@@ -135,14 +135,14 @@ export default function LegalPage() {
             </h2>
             <p className="mb-4">
               We do not share your personal information with third-party
-              companies, organizations, or individuals outside of Open Vision
+              companies, organizations, or individuals outside of Open Visual
               unless one of the following circumstances applies:
             </p>
             <ul className="ml-4 list-inside list-disc space-y-2">
               <li>
                 <span className="font-semibold">With Your Consent:</span> We
                 will share personal information with companies, organizations or
-                individuals outside of Open Vision when we have your consent to
+                individuals outside of Open Visual when we have your consent to
                 do so.
               </li>
               <li>
@@ -233,10 +233,10 @@ export default function LegalPage() {
               <li>
                 By email:{" "}
                 <a
-                  href="mailto:info@openvision.co"
+                  href="mailto:info@openvisual.co"
                   className="text-blue-600 hover:underline"
                 >
-                  info@openvision.co
+                  info@openvisual.co
                 </a>
               </li>
               <li>By phone: (123) 456-VISUAL</li>
@@ -262,7 +262,7 @@ export default function LegalPage() {
         <div className="mx-auto max-w-4xl space-y-8 text-lg leading-relaxed text-gray-700">
           <SectionHeader
             title="Terms of Service"
-            subtitle="These terms and conditions outline the rules and regulations for the use of Open Vision's Website and services."
+            subtitle="These terms and conditions outline the rules and regulations for the use of Open Visual's Website and services."
             textColor={COLOR_DARK_TEXT}
             subtextColor={COLOR_NEUTRAL_TEXT}
           />
@@ -275,7 +275,7 @@ export default function LegalPage() {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing and using the Open Vision website and services, you
+              By accessing and using the Open Visual website and services, you
               accept and agree to be bound by these Terms of Service. If you do
               not agree to abide by the above, please do not use this service.
             </p>
@@ -289,7 +289,7 @@ export default function LegalPage() {
               2. Services Provided
             </h2>
             <p className="mb-4">
-              Open Vision provides comprehensive visual solutions including, but
+              Open Visual provides comprehensive visual solutions including, but
               not limited to:
             </p>
             <ul className="ml-4 list-inside list-disc space-y-2">
@@ -314,7 +314,7 @@ export default function LegalPage() {
               3. User Responsibilities
             </h2>
             <p className="mb-4">
-              As a user or client of Open Vision's services, you agree to:
+              As a user or client of Open Visual's services, you agree to:
             </p>
             <ul className="ml-4 list-inside list-disc space-y-2">
               <li>
@@ -346,7 +346,7 @@ export default function LegalPage() {
             </h2>
             <p>
               All content on this website, including text, graphics, logos,
-              images, and software, is the property of Open Vision or its
+              images, and software, is the property of Open Visual or its
               content suppliers and protected by international copyright laws.
               Client work, once fully paid for, will typically be transferred to
               the client, as outlined in the respective project contract.
@@ -361,7 +361,7 @@ export default function LegalPage() {
               5. Limitation of Liability
             </h2>
             <p>
-              Open Vision will not be liable for any direct, indirect,
+              Open Visual will not be liable for any direct, indirect,
               incidental, special, consequential, or exemplary damages,
               including but not limited to, damages for loss of profits,
               goodwill, data, or other intangible losses, resulting from the use
@@ -412,7 +412,7 @@ export default function LegalPage() {
         <div className="mx-auto max-w-4xl space-y-8 text-lg leading-relaxed text-gray-700">
           <SectionHeader
             title="Cookie Policy"
-            subtitle="Understanding how Open Vision uses cookies and similar tracking technologies on our website."
+            subtitle="Understanding how Open Visual uses cookies and similar tracking technologies on our website."
             textColor={COLOR_DARK_TEXT}
             subtextColor={COLOR_NEUTRAL_TEXT}
           />
@@ -440,7 +440,7 @@ export default function LegalPage() {
               2. How We Use Cookies
             </h2>
             <p className="mb-4">
-              Open Vision uses cookies for several purposes:
+              Open Visual uses cookies for several purposes:
             </p>
             <ul className="ml-4 list-inside list-disc space-y-2">
               <li>

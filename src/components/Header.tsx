@@ -59,7 +59,7 @@ const Header: React.FC = () => {
         >
           Open
         </span>{" "}
-        Vision
+        Visual
       </Link>
       <div className="flex items-center md:hidden">
         <button

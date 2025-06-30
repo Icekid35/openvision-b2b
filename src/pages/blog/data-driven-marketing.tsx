@@ -128,7 +128,7 @@ export default function DataDrivenMarketingBlogPage() {
           />
 
           <p>
-            At Open Vision, our digital marketing specialists are adept at
+            At Open Visual, our digital marketing specialists are adept at
             harnessing the power of data. We combine visual creativity with
             rigorous analytical processes to design and execute campaigns that
             not only look stunning but also deliver exceptional ROI. From

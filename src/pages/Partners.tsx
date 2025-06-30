@@ -250,7 +250,7 @@ export default function PartnersPage() {
       <section className="bg-blue-600 px-4 py-16 text-center text-white sm:px-8 sm:py-24">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-6 text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
-            Interested in Partnering with Open Vision?
+            Interested in Partnering with Open Visual?
           </h2>
           <p className="mb-10 text-lg opacity-90 sm:text-xl md:text-2xl">
             Let's explore how we can create mutual growth and deliver

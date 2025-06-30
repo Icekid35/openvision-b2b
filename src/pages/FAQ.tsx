@@ -37,22 +37,22 @@ export default function FAQPage() {
 
   const faqs = [
     {
-      question: "What types of visual solutions does Open Vision offer?",
+      question: "What types of visual solutions does Open Visual offer?",
       answer:
-        "Open Vision specializes in a comprehensive range of visual solutions including brand & graphic design, web design & development, corporate video production, UI/UX design, immersive AR/VR experiences, 3D modeling & visualization, and digital marketing campaigns.",
+        "Open Visual specializes in a comprehensive range of visual solutions including brand & graphic design, web design & development, corporate video production, UI/UX design, immersive AR/VR experiences, 3D modeling & visualization, and digital marketing campaigns.",
     },
     {
-      question: "How does Open Vision approach new projects?",
+      question: "How does Open Visual approach new projects?",
       answer:
         "We follow a streamlined, collaborative 5-step process: 1. Ideation & Briefing, 2. Strategic Conceptualization & Planning, 3. Design Prototyping & Iteration, 4. Production, Development & Refinement, and 5. Final Delivery, Launch & Optimization. This ensures transparency and tailored results.",
     },
     {
-      question: "What makes Open Vision different from other agencies?",
+      question: "What makes Open Visual different from other agencies?",
       answer:
         "Our unique blend of artistic creativity with strategic, data-driven thinking sets us apart. We focus not just on aesthetics, but on delivering measurable business outcomes. Our client-centric partnership model ensures solutions are perfectly aligned with your brand's vision and objectives.",
     },
     {
-      question: "Which industries does Open Vision serve?",
+      question: "Which industries does Open Visual serve?",
       answer:
         "Our expertise spans diverse industries including Manufacturing, Healthcare, Education, Finance, Retail & E-commerce, Agriculture, Real Estate, Logistics, Hospitality, Energy, Legal, Technology, Automotive, Fitness, and Arts & Culture.",
     },
@@ -72,7 +72,7 @@ export default function FAQPage() {
         "Yes, our commitment extends beyond launch. We offer ongoing support, maintenance, and optimization services to ensure your visual solutions continue to perform optimally and adapt to evolving market needs.",
     },
     {
-      question: "How can I get started with Open Vision?",
+      question: "How can I get started with Open Visual?",
       answer:
         "It's easy! Simply visit our Contact Us page to fill out an inquiry form, or you can call us directly or connect through our social media channels. We look forward to discussing your vision!",
     },

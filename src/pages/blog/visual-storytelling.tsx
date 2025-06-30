@@ -171,7 +171,7 @@ export default function VisualStorytellingBlogPage() {
             Whether it's through a captivating corporate video, an interactive
             website design, a striking infographic, or a cohesive brand
             identity, visual storytelling is about curating an experience. At
-            Open Vision, we specialize in helping businesses craft these
+            Open Visual, we specialize in helping businesses craft these
             compelling narratives, ensuring every visual element works in
             harmony to tell your unique brand story. From concept to execution,
             we translate your vision into visual mastery that resonates and

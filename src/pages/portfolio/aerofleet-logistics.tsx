@@ -127,7 +127,7 @@ export default function AeroFleetLogisticsPortfolioPage() {
                 Our Solution: Intuitive Data Visualization Dashboard
               </h3>
               <p>
-                Open Vision designed and developed a custom, real-time data
+                Open Visual designed and developed a custom, real-time data
                 visualization dashboard for AeroFleet Logistics. Our solution
                 transformed disparate data points into interactive charts, maps,
                 and graphs, providing a clear overview of fleet performance,
@@ -253,7 +253,7 @@ export default function AeroFleetLogisticsPortfolioPage() {
             </div>
           </div>
           <p className="mx-auto mt-12 max-w-3xl text-lg leading-relaxed opacity-90">
-            Open Vision's data visualization expertise empowered AeroFleet
+            Open Visual's data visualization expertise empowered AeroFleet
             Logistics to gain unprecedented control and insight into their
             operations, demonstrating the transformative power of visual data in
             complex industries.

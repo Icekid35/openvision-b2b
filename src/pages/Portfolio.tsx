@@ -207,7 +207,7 @@ export default function PortfolioPage() {
             Ready to Feature Your Project in Our Portfolio?
           </h2>
           <p className="mb-10 text-lg opacity-90 sm:text-xl md:text-2xl">
-            Let's discuss how Open Vision can create your next success story.
+            Let's discuss how Open Visual can create your next success story.
           </p>
           <Link
             to="/contact"

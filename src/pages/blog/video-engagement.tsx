@@ -167,7 +167,7 @@ export default function VideoEngagementBlogPage() {
             The quality of your video directly impacts its effectiveness.
             Pixelated footage, poor audio, or uninspired storytelling can
             undermine your message. That's why investing in professional video
-            production is critical for B2B success. At Open Vision, we
+            production is critical for B2B success. At Open Visual, we
             specialize in creating high-quality, impactful videos that resonate
             with your target audience and help you achieve your business
             objectives.

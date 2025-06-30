@@ -127,7 +127,7 @@ export default function GlobalEcoSolutionsPortfolioPage() {
                 Our Solution: Dynamic Animated Explainer
               </h3>
               <p>
-                Open Vision proposed and developed a concise, visually rich
+                Open Visual proposed and developed a concise, visually rich
                 animated explainer video. Our solution focused on transforming
                 complex technical information into an accessible and compelling
                 narrative. We utilized custom illustrations, clear infographics,

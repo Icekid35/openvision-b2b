@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
         <div className="mx-auto max-w-4xl space-y-8 text-lg leading-relaxed text-gray-700">
           <SectionHeader
             title="Your Trust, Our Priority"
-            subtitle="At Open Vision, safeguarding your privacy is fundamental to our commitment to ethical and responsible business practices."
+            subtitle="At Open Visual, safeguarding your privacy is fundamental to our commitment to ethical and responsible business practices."
             textColor={COLOR_DARK_TEXT}
             subtextColor={COLOR_NEUTRAL_TEXT}
           />
@@ -132,14 +132,14 @@ export default function PrivacyPolicyPage() {
             </h2>
             <p className="mb-4">
               We do not share your personal information with third-party
-              companies, organizations, or individuals outside of Open Vision
+              companies, organizations, or individuals outside of Open Visual
               unless one of the following circumstances applies:
             </p>
             <ul className="ml-4 list-inside list-disc space-y-2">
               <li>
                 <span className="font-semibold">With Your Consent:</span> We
                 will share personal information with companies, organizations or
-                individuals outside of Open Vision when we have your consent to
+                individuals outside of Open Visual when we have your consent to
                 do so.
               </li>
               <li>
@@ -230,10 +230,10 @@ export default function PrivacyPolicyPage() {
               <li>
                 By email:{" "}
                 <a
-                  href="mailto:info@openvision.co"
+                  href="mailto:info@openvisual.co"
                   className="text-blue-600 hover:underline"
                 >
-                  info@openvision.co
+                  info@openvisual.co
                 </a>
               </li>
               <li>By phone: (123) 456-VISUAL</li>

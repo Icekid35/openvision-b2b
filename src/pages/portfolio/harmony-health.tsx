@@ -128,7 +128,7 @@ export default function HarmonyHealthPortfolioPage() {
                 Our Solution: A Holistic Brand & Web Transformation
               </h3>
               <p>
-                Open Vision embarked on a journey to revitalize Harmony Health's
+                Open Visual embarked on a journey to revitalize Harmony Health's
                 brand from the ground up. Our solution involved a complete brand
                 redesign, including a new logo, color palette, and visual
                 guidelines that exuded professionalism, empathy, and clarity.

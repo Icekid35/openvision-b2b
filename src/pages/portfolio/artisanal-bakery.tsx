@@ -128,7 +128,7 @@ export default function ArtisanalBakeryPortfolioPage() {
                 Our Solution: A Visually Rich, User-Friendly E-commerce Site
               </h3>
               <p>
-                Open Vision designed and developed a custom e-commerce website
+                Open Visual designed and developed a custom e-commerce website
                 that extended Artisanal Bakery's delightful in-store experience
                 online. We focused on high-quality product photography,
                 intuitive navigation, and a simplified checkout process. The

@@ -161,7 +161,7 @@ export default function ComprehensiveBrandIdentityBlogPage() {
           </ul>
 
           <p className="mt-8 italic text-gray-600">
-            At Open Vision, we go beyond designing beautiful logos. We immerse
+            At Open Visual, we go beyond designing beautiful logos. We immerse
             ourselves in your brand's DNA to craft comprehensive brand
             identities that tell your unique story, resonate with your audience,
             and drive your business forward.{" "}

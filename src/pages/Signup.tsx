@@ -71,7 +71,7 @@ export default function SignupPage() {
       <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-6xl text-center">
           <h1 className="mb-4 text-4xl font-extrabold leading-tight text-gray-900 sm:mb-6 sm:text-5xl md:text-6xl">
-            Join <span className="text-blue-600">Open Vision</span>
+            Join <span className="text-blue-600">Open Visual</span>
           </h1>
           <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600 sm:mb-10 sm:text-xl md:text-2xl">
             Create an account to unlock exclusive features and manage your
@@ -84,7 +84,7 @@ export default function SignupPage() {
         <div className="mx-auto max-w-xl">
           <SectionHeader
             title="Create Your Account"
-            subtitle="Fill out the details below to get started with Open Vision."
+            subtitle="Fill out the details below to get started with Open Visual."
             textColor={COLOR_DARK_TEXT}
             subtextColor={COLOR_NEUTRAL_TEXT}
           />

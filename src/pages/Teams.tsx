@@ -136,7 +136,7 @@ export default function TeamPage() {
         <div className="mx-auto max-w-6xl">
           <SectionHeader
             title="The Minds Behind the Mastery"
-            subtitle="Meet the talented individuals who drive Open Vision's commitment to excellence and innovation."
+            subtitle="Meet the talented individuals who drive Open Visual's commitment to excellence and innovation."
             textColor={COLOR_DARK_TEXT}
             subtextColor={COLOR_NEUTRAL_TEXT}
           />

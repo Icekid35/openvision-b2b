@@ -8,21 +8,21 @@ export default function Home() {
   const COLOR_ACCENT_GREEN = "#10B981";
   const COLOR_DARK_TEXT = "#1F2937";
   const COLOR_NEUTRAL_TEXT = "#6B7280";
-   const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
+      setIsMobile(window.innerWidth <= 768);
+    };
 
-    handleResize()
+    handleResize();
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -102,7 +102,6 @@ export default function Home() {
       <section
         id="hero-section"
         className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-32"
-
       >
         <div className="absolute inset-0 z-0 opacity-100">
           {" "}
@@ -120,18 +119,14 @@ export default function Home() {
           className="relative z-20 mx-auto flex max-w-6xl translate-y-0 flex-col items-center justify-between gap-8 opacity-100 transition-none md:flex-row md:gap-16"
           id="hero-content"
           data-aos="fade-right"
-          
         >
-          <div         
-          data-aos="fade-up"
-        
-         className="text-center md:w-1/2 md:text-left">
+          <div data-aos="fade-up" className="text-center md:w-1/2 md:text-left">
             <h1 className="mb-4 text-4xl font-extrabold leading-tight text-gray-900 sm:mb-6 sm:text-5xl md:text-6xl">
               Your Vision, Our{" "}
               <span className="text-blue-600">Visual Mastery</span>
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-600 sm:mb-10 sm:text-xl md:mx-0 md:text-2xl">
-              Open Vision delivers comprehensive visual solutions, from stunning
+              Open Visual delivers comprehensive visual solutions, from stunning
               web designs and powerful branding to captivating video production
               and immersive digital experiences.
             </p>
@@ -150,10 +145,10 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div        
-           data-aos="fade-left"
-        
-         className="mt-8 flex w-full justify-center md:mt-0 md:w-1/2">
+          <div
+            data-aos="fade-left"
+            className="mt-8 flex w-full justify-center md:mt-0 md:w-1/2"
+          >
             <ImgPlaceholder
               src={"/images/heromockup.png"}
               w={600}
@@ -170,7 +165,6 @@ export default function Home() {
       <section
         className="relative bg-white px-4 py-12 shadow-inner sm:px-8 sm:py-16"
         data-aos="fade-up"
-        
         id="trust-bar"
       >
         <i className="fas fa-shapes absolute -top-8 left-1/4 -rotate-12 transform text-4xl text-gray-300 opacity-50"></i>
@@ -236,7 +230,6 @@ export default function Home() {
         id="solutions"
         className="relative bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
         data-aos="fade-up"
-        
       >
         <i className="fas fa-code absolute -top-10 right-1/4 rotate-12 transform text-5xl text-blue-300 opacity-50"></i>
         <i className="fas fa-mobile-alt left-1/5 absolute bottom-0 -rotate-12 transform text-5xl text-green-300 opacity-50"></i>
@@ -307,7 +300,7 @@ export default function Home() {
                 key={i}
                 className="hover:scale-102 flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-xl transition-all duration-300 hover:shadow-2xl sm:p-8"
                 data-aos="zoom-in"
-                data-aos-delay={ isMobile ? 0 : 100 + i * 100}
+                data-aos-delay={isMobile ? 0 : 100 + i * 100}
               >
                 <div
                   className="mb-4 text-5xl sm:mb-6 sm:text-6xl"
@@ -354,7 +347,6 @@ export default function Home() {
         id="industries"
         className="relative overflow-hidden bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
         data-aos="fade-up"
-        
       >
         <i className="fas fa-chart-pie absolute -top-8 left-1/3 z-20 -rotate-6 transform text-5xl text-gray-300 opacity-70"></i>
         <i className="fas fa-map-marker-alt absolute bottom-0 right-1/4 z-20 rotate-6 transform text-5xl text-gray-300 opacity-70"></i>
@@ -419,7 +411,7 @@ export default function Home() {
                 key={i}
                 className="hover:scale-102 flex flex-col items-center rounded-xl bg-gray-50 p-6 text-center shadow-md transition-all duration-300 hover:shadow-lg"
                 data-aos="fade-up"
-                data-aos-delay={ isMobile ? 0 : 100 + i * 80}
+                data-aos-delay={isMobile ? 0 : 100 + i * 80}
               >
                 <div
                   className="mb-3 text-4xl sm:text-5xl"
@@ -454,7 +446,6 @@ export default function Home() {
       <section
         className="relative overflow-hidden bg-white px-4 py-16 sm:px-8 sm:py-24"
         data-aos="fade-up"
-        
         id="impact"
       >
         <div className="absolute inset-x-0 bottom-0 h-[200px] overflow-hidden">
@@ -508,7 +499,7 @@ export default function Home() {
                 key={i}
                 className="transform rounded-xl bg-blue-600/80 p-6 text-white shadow-lg backdrop-blur-sm backdrop-filter transition-all duration-300 hover:scale-105 sm:p-8"
                 data-aos="zoom-in"
-                data-aos-delay={ isMobile ? 0 : 100 + i * 100}
+                data-aos-delay={isMobile ? 0 : 100 + i * 100}
               >
                 {" "}
                 <div
@@ -530,7 +521,6 @@ export default function Home() {
       <section
         className="relative bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
         data-aos="fade-up"
-        
         id="featured-project"
       >
         <i className="fas fa-lightbulb left-1/5 absolute -top-8 rotate-6 transform text-5xl text-purple-400 opacity-50"></i>
@@ -572,7 +562,7 @@ export default function Home() {
               </h3>
               <p className="text-md mb-6 leading-relaxed text-gray-600 sm:mb-8 sm:text-lg">
                 Moderne Furnishings sought to refresh their brand identity and
-                create a more engaging online presence. Open Vision executed a
+                create a more engaging online presence. Open Visual executed a
                 full spectrum visual transformation, including new brand
                 guidelines, a stunning e-commerce website redesign, and a series
                 of high-quality product visualization videos. This resulted in a{" "}
@@ -606,7 +596,6 @@ export default function Home() {
       <section
         className="relative bg-white px-4 py-16 sm:px-8 sm:py-24"
         data-aos="fade-up"
-        
         id="process"
       >
         <i className="fas fa-clipboard-list absolute -top-8 left-1/4 -rotate-6 transform text-5xl text-teal-400 opacity-50"></i>
@@ -659,7 +648,7 @@ export default function Home() {
                 key={i}
                 className="relative z-10 flex w-full flex-col items-center rounded-xl border-b-4 border-blue-600 bg-gray-50 p-5 text-center shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg md:w-1/5"
                 data-aos="fade-up"
-                data-aos-delay={ isMobile ? 0 : 100 + i * 100}
+                data-aos-delay={isMobile ? 0 : 100 + i * 100}
               >
                 <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-blue-600 text-2xl font-bold text-white sm:mb-4 sm:h-16 sm:w-16 sm:text-3xl">
                   <i className={p.icon}></i>
@@ -690,7 +679,6 @@ export default function Home() {
         id="technologies"
         className="relative bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
         data-aos="fade-up"
-        
       >
         <i className="fas fa-bezier-curve right-1/5 absolute -top-8 -rotate-6 transform text-5xl text-pink-400 opacity-50"></i>
         <i className="fas fa-code-branch absolute bottom-0 left-1/4 rotate-12 transform text-4xl text-purple-400 opacity-50"></i>
@@ -755,7 +743,7 @@ export default function Home() {
                 key={i}
                 className="hover:scale-102 flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-md transition-all duration-300 hover:shadow-lg"
                 data-aos="zoom-in"
-                data-aos-delay={ isMobile ? 0 : 80 + i * 80}
+                data-aos-delay={isMobile ? 0 : 80 + i * 80}
               >
                 <div
                   className="mb-3 text-4xl sm:text-5xl"
@@ -788,7 +776,6 @@ export default function Home() {
       <section
         className="bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
         data-aos="fade-up"
-        
         id="about"
       >
         <div
@@ -796,7 +783,7 @@ export default function Home() {
         >
           {" "}
           <SectionHeader
-            title="Why Partner with Open Vision for Your Visual Needs?"
+            title="Why Partner with Open Visual for Your Visual Needs?"
             subtitle="We blend creativity with strategic thinking to deliver visual solutions that not only look stunning but also achieve your business objectives."
             textColor={COLOR_DARK_TEXT}
             subtextColor={COLOR_NEUTRAL_TEXT}
@@ -866,7 +853,10 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="mt-8 flex w-full justify-center md:mt-0" data-aos="fade-left" >
+            <div
+              className="mt-8 flex w-full justify-center md:mt-0"
+              data-aos="fade-left"
+            >
               <ImgPlaceholder
                 src={"images/growth.png"}
                 w={600}
@@ -893,7 +883,6 @@ export default function Home() {
       <section
         className="bg-white px-4 py-16 sm:px-8 sm:py-24"
         data-aos="fade-up"
-        
         id="testimonials"
       >
         <div className="mx-auto max-w-6xl">
@@ -911,7 +900,7 @@ export default function Home() {
             {[
               {
                 quote:
-                  "“Open Vision completely transformed our brand identity and delivered a website that truly reflects our premium services. Outstanding work!”",
+                  "“Open Visual completely transformed our brand identity and delivered a website that truly reflects our premium services. Outstanding work!”",
                 name: "Sarah Chen",
                 title: "Marketing Director, Elite Holdings",
                 avatarSrc:
@@ -920,7 +909,7 @@ export default function Home() {
               },
               {
                 quote:
-                  "“The video production team at Open Vision created an animated explainer that perfectly communicates our complex product. Highly recommended!”",
+                  "“The video production team at Open Visual created an animated explainer that perfectly communicates our complex product. Highly recommended!”",
                 name: "Michael Ramirez",
                 title: "Product Manager, TechSolutions Inc.",
                 avatarSrc:
@@ -929,19 +918,19 @@ export default function Home() {
               },
               {
                 quote:
-                  "“Our new e-commerce site designed by Open Vision is visually stunning and incredibly user-friendly. We've seen a significant increase in sales.”",
-                name: "Jessica Kim",
+                  "“Our new e-commerce site designed by Open Visual is visually stunning and incredibly user-friendly. We've seen a significant increase in sales.”",
+                name: "Bello Habeeb",
                 title: "CEO, Global Retail Co.",
                 avatarSrc:
-                  "https://placehold.co/80x80/6f42c1/ffffff/png?text=JK",
-                alt: "Jessica Kim Avatar",
+                  "https://placehold.co/80x80/6f42c1/ffffff/png?text=HB",
+                alt: "Bello  Avatar",
               },
             ].map((testimonial, i) => (
               <div
                 key={i}
                 className="hover:scale-102 flex flex-col items-center rounded-xl bg-gradient-to-br from-blue-50 to-green-50 p-6 text-center shadow-lg transition-all duration-300 hover:shadow-xl sm:p-8"
                 data-aos="zoom-in"
-                data-aos-delay={ isMobile ? 0 : 100 + i * 120}
+                data-aos-delay={isMobile ? 0 : 100 + i * 120}
               >
                 <blockquote className="text-md mb-4 font-medium italic leading-relaxed text-gray-700 sm:mb-6 sm:text-lg">
                   "{testimonial.quote}"
@@ -979,12 +968,11 @@ export default function Home() {
       <section
         className="bg-gray-50 px-4 py-16 sm:px-8 sm:py-24"
         data-aos="fade-up"
-        
         id="blog"
       >
         <div className="mx-auto max-w-6xl">
           <SectionHeader
-            title="Latest Insights from Open Vision"
+            title="Latest Insights from Open Visual"
             subtitle="Stay ahead with our expert articles on visual trends, design best practices, digital marketing strategies, and creative industry news."
             textColor={COLOR_DARK_TEXT}
             subtextColor={COLOR_NEUTRAL_TEXT}
@@ -1022,7 +1010,7 @@ export default function Home() {
                 to={post.link}
                 className="hover:scale-102 block rounded-xl bg-white shadow-xl transition-all duration-300 hover:shadow-2xl"
                 data-aos="fade-up"
-                data-aos-delay={ isMobile ? 0 : 100 + i * 120}
+                data-aos-delay={isMobile ? 0 : 100 + i * 120}
               >
                 <div className="flex w-full justify-center overflow-hidden rounded-t-xl">
                   <ImgPlaceholder
@@ -1066,7 +1054,6 @@ export default function Home() {
 
       <section
         className="flex min-h-[400px] items-center justify-center bg-blue-600 px-4 py-16 text-center text-white sm:px-8 sm:py-24"
-
         id="contact"
       >
         <div className="mx-auto max-w-4xl">
@@ -1079,7 +1066,7 @@ export default function Home() {
             Ready to Amplify Your Brand Visually?
           </h2>
           <p className="mb-10 text-lg opacity-90 sm:mb-12 sm:text-xl md:text-2xl">
-            Let's discuss how Open Vision can craft stunning visuals and digital
+            Let's discuss how Open Visual can craft stunning visuals and digital
             experiences for your enterprise.
           </p>
           <Link

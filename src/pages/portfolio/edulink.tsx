@@ -127,7 +127,7 @@ export default function EduLinkPortfolioPage() {
                 Our Solution: Dynamic & User-Centric Platform Development
               </h3>
               <p>
-                Open Vision partnered with EduLink to design and develop a
+                Open Visual partnered with EduLink to design and develop a
                 cutting-edge interactive learning platform. Our solution focused
                 on a clean, modern UI, seamless content delivery, and integrated
                 interactive elements. We built a robust backend capable of
@@ -250,7 +250,7 @@ export default function EduLinkPortfolioPage() {
             </div>
           </div>
           <p className="mx-auto mt-12 max-w-3xl text-lg leading-relaxed opacity-90">
-            Open Vision's development of the EduLink platform proved
+            Open Visual's development of the EduLink platform proved
             instrumental in enhancing the learning experience, validating the
             power of thoughtful design and robust development in educational
             technology.

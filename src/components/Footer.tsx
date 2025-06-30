@@ -20,7 +20,7 @@ const Footer: React.FC = () => (
           >
             Open
           </span>{" "}
-          Vision
+          Visual
         </h4>
         <p className="sm:text-md mb-4 text-sm leading-relaxed sm:mb-6">
           Your partner in leveraging visual storytelling and digital design for
@@ -28,7 +28,7 @@ const Footer: React.FC = () => (
         </p>
         <div className="flex space-x-4 sm:space-x-6">
           <a
-            href="https://twitter.com/openvision"
+            href="https://twitter.com/openvisual"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 transition duration-200 hover:text-blue-500"
@@ -36,7 +36,7 @@ const Footer: React.FC = () => (
             <i className="fab fa-twitter text-xl sm:text-2xl"></i>
           </a>
           <a
-            href="https://linkedin.com/company/openvision"
+            href="https://linkedin.com/company/openvisual"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 transition duration-200 hover:text-blue-500"
@@ -44,7 +44,7 @@ const Footer: React.FC = () => (
             <i className="fab fa-linkedin-in text-xl sm:text-2xl"></i>
           </a>
           <a
-            href="https://facebook.com/openvision"
+            href="https://facebook.com/openvisual"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 transition duration-200 hover:text-blue-500"
@@ -363,7 +363,7 @@ const Footer: React.FC = () => (
       </div>
     </div>
     <div className="mt-8 border-t border-gray-700 pt-6 text-center text-xs text-gray-500 sm:mt-12 sm:pt-8 sm:text-sm">
-      © {new Date().getFullYear()} Open Vision. All rights reserved. |
+      © {new Date().getFullYear()} Open Visual. All rights reserved. |
       <Link to="/privacy-policy" className="ml-2 hover:text-blue-500">
         Privacy Policy
       </Link>{" "}

@@ -75,7 +75,7 @@ export default function AboutUsPage() {
       <section className="relative bg-gradient-to-br from-blue-100 to-green-50 px-4 py-16 pt-24 sm:px-8 sm:py-24 sm:pt-48">
         <div className="mx-auto max-w-6xl text-center">
           <h1 className="mb-4 text-4xl font-extrabold leading-tight text-gray-900 sm:mb-6 sm:text-5xl md:text-6xl">
-            About <span className="text-blue-600">Open Vision</span>
+            About <span className="text-blue-600">Open Visual</span>
           </h1>
           <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600 sm:mb-10 sm:text-xl md:text-2xl">
             We are a leading digital creative agency dedicated to transforming
@@ -88,7 +88,7 @@ export default function AboutUsPage() {
         <div className="mx-auto max-w-6xl">
           <SectionHeader
             title="Our Journey: From Vision to Visual Mastery"
-            subtitle="Born from a passion for design and technology, Open Vision has grown into a trusted partner for enterprises seeking unparalleled visual solutions."
+            subtitle="Born from a passion for design and technology, Open Visual has grown into a trusted partner for enterprises seeking unparalleled visual solutions."
             textColor={COLOR_DARK_TEXT}
             subtextColor={COLOR_NEUTRAL_TEXT}
           />
@@ -98,10 +98,10 @@ export default function AboutUsPage() {
                 className="mb-4 text-3xl font-bold"
                 style={{ color: COLOR_PRIMARY_BLUE }}
               >
-                The Genesis of Open Vision
+                The Genesis of Open Visual
               </h3>
               <p className="mb-6">
-                Open Vision was founded on the principle that every great idea
+                Open Visual was founded on the principle that every great idea
                 deserves to be seen. What began as a small team of passionate
                 designers and developers has blossomed into a full-fledged
                 digital creative agency, serving a diverse portfolio of
@@ -125,7 +125,7 @@ export default function AboutUsPage() {
                 Our Philosophy: Creativity Meets Strategy
               </h3>
               <p className="mb-6">
-                At Open Vision, we believe that design is not just about making
+                At Open Visual, we believe that design is not just about making
                 things look good; it's about solving problems, communicating
                 effectively, and driving results. Our philosophy blends artistic
                 creativity with strategic thinking, ensuring that every visual
@@ -147,7 +147,7 @@ export default function AboutUsPage() {
             <ImgPlaceholder
               w={800}
               h={450}
-              label="Open Vision Team Culture"
+              label="Open Visual Team Culture"
               bgColor={COLOR_ACCENT_GREEN.replace("#", "")}
               textColor="FFFFFF"
               src={"images/teamculture.jpg"}
@@ -280,7 +280,7 @@ export default function AboutUsPage() {
           </div>
           <div className="mt-12">
             <Link
-          to="/team"
+              to="/team"
               className="inline-flex transform items-center rounded-lg bg-green-500 px-6 py-3 text-lg font-bold text-white shadow-md transition duration-300 hover:scale-105 hover:bg-green-600"
             >
               View Full Team <i className="fas fa-users-cog ml-2"></i>
@@ -292,14 +292,14 @@ export default function AboutUsPage() {
       <section className="bg-blue-600 px-4 py-16 text-center text-white sm:px-8 sm:py-24">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-6 text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
-            Partner with Open Vision Today
+            Partner with Open Visual Today
           </h2>
           <p className="mb-10 text-lg opacity-90 sm:text-xl md:text-2xl">
             Let's create something extraordinary together and elevate your
             brand's visual presence.
           </p>
           <Link
-                    to="/contact"
+            to="/contact"
             className="inline-flex transform items-center rounded-xl bg-green-500 px-8 py-4 text-xl font-bold text-white shadow-xl transition duration-300 hover:scale-105 hover:bg-green-600"
           >
             Get in Touch <i className="fas fa-envelope ml-3"></i>

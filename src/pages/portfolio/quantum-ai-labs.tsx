@@ -127,7 +127,7 @@ export default function QuantumAILabsPortfolioPage() {
                 Our Solution: Visually-Driven, Targeted Digital Campaigns
               </h3>
               <p>
-                Open Vision devised a multi-channel digital marketing strategy
+                Open Visual devised a multi-channel digital marketing strategy
                 for Quantum AI Labs. Our approach combined visually
                 sophisticated ad creatives and landing pages with highly
                 targeted audience segmentation. We focused on educational
@@ -250,7 +250,7 @@ export default function QuantumAILabsPortfolioPage() {
             </div>
           </div>
           <p className="mx-auto mt-12 max-w-3xl text-lg leading-relaxed opacity-90">
-            Open Vision's data-driven digital marketing campaign empowered
+            Open Visual's data-driven digital marketing campaign empowered
             Quantum AI Labs to effectively reach its target audience,
             demonstrating the power of visually compelling and strategically
             executed marketing.

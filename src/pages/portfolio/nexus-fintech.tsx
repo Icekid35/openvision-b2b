@@ -127,7 +127,7 @@ export default function NexusFintechPortfolioPage() {
                 Our Solution: User-Centric Design & Development
               </h3>
               <p>
-                Open Vision collaborated closely with Nexus Fintech to design
+                Open Visual collaborated closely with Nexus Fintech to design
                 and develop a mobile application with a strong emphasis on
                 intuitive UI/UX. Our solution involved extensive user research,
                 meticulous wireframing, and interactive prototyping to ensure
@@ -250,7 +250,7 @@ export default function NexusFintechPortfolioPage() {
             </div>
           </div>
           <p className="mx-auto mt-12 max-w-3xl text-lg leading-relaxed opacity-90">
-            The Nexus Fintech mobile app demonstrated Open Vision's capability
+            The Nexus Fintech mobile app demonstrated Open Visual's capability
             to deliver secure, highly functional, and visually appealing
             applications that meet the rigorous demands of the financial sector.
           </p>

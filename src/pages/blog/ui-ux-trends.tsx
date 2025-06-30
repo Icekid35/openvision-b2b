@@ -154,7 +154,7 @@ export default function UIUXTrendsBlogPage() {
           </p>
 
           <p className="mt-8 italic text-gray-600">
-            At Open Vision, we continuously integrate these evolving UI/UX
+            At Open Visual, we continuously integrate these evolving UI/UX
             trends into our design philosophy, ensuring our clients receive
             cutting-edge, user-centric solutions.{" "}
             <Link to="/contact" className="text-blue-600 hover:underline">

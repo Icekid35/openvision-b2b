@@ -131,7 +131,7 @@ export default function BrandColorPaletteBlogPage() {
 
           <p className="mt-8 italic text-gray-600">
             A well-chosen color palette is a cornerstone of effective branding.
-            At Open Vision, our expert designers delve deep into color
+            At Open Visual, our expert designers delve deep into color
             psychology and brand strategy to craft palettes that not only look
             stunning but also resonate powerfully with your audience.{" "}
             <Link to="/contact" className="text-blue-600 hover:underline">
